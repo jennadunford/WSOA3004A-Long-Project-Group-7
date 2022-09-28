@@ -6,6 +6,9 @@ public class RemoveFromInventory : MonoBehaviour
 {
     public void RemoveBook()
     {
-        
+        if (this.gameObject.tag == "In Inventory")
+        {
+
+        }
     }
 }
