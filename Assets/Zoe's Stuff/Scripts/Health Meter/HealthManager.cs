@@ -5,52 +5,87 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject prefab;
+    [SerializeField]
+    private GameObject heartField;
+    
     private GameObject heartOne;
-    [SerializeField]
     private GameObject heartTwo;
-    [SerializeField]
     private GameObject heartThree;
-    [SerializeField]
     private GameObject heartFour;
-    [SerializeField]
     private GameObject heartFive;
-    [SerializeField]
     private GameObject heartSix;
+    private GameObject heartSeven;
+    private GameObject heartEight;
 
-    private GameObject[] heartsArray = new GameObject[6];
+    private GameObject[] heartsArray = new GameObject[8];
 
-    public int currantHealth = 6;
+    public int currantHealth = 5;
+    public int maxHealth = 5;
+
+    public bool firstUpgrade;
+    public bool secondUpgrade;
 
     private void Start()
     {
-        heartsArray[0] = heartOne;
-        heartsArray[1] = heartTwo;
-        heartsArray[2] = heartThree;
-        heartsArray[3] = heartFour;
-        heartsArray[4] = heartFive;
-        heartsArray[5] = heartSix;
+        heartsArray[0] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform); 
+        heartsArray[1] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        heartsArray[2] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        heartsArray[3] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        heartsArray[4] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        heartsArray[5] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        heartsArray[6] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        heartsArray[7] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Keypad7) && !firstUpgrade)
+        {
+            firstUpgrade = true;
+            currantHealth++;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad8) && !secondUpgrade)
+        {
+            secondUpgrade = true;
+            currantHealth++;
+        }
+
+        if (firstUpgrade)
+        {
+            heartsArray[6].SetActive(true);
+            maxHealth = 7;
+        }
+        else
+        {
+            heartsArray[6].SetActive(false);
+        }
+
+        if (firstUpgrade && secondUpgrade)
+        {
+            heartsArray[7].SetActive(true);
+            maxHealth = 8;
+        }
+        else
+        {
+            heartsArray[7].SetActive(false);
+        }
+
         if (currantHealth > 0)
         {
-            heartsArray[currantHealth - 1].SetActive(true);
-
             for (int i = (currantHealth - 1); i >= 0; i--)
             {
                 heartsArray[i].SetActive(true);
             }
         }
 
-        if(currantHealth <= 5)
+        if(currantHealth <= (maxHealth - 1))
         {
-            heartsArray[currantHealth].SetActive(false);
-
-            for (int i = currantHealth; i <= (heartsArray.Length - 1); i++)
+            for (int i = currantHealth; i <= (maxHealth - 1); i++)
             {
                 heartsArray[i].SetActive(false);
             }
-        }
+        }    
     }
 }

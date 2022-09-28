@@ -14,7 +14,7 @@ public class HealthIncrease : MonoBehaviour
             healthManager.GetComponent<HealthManager>().currantHealth -= 1;
         }
 
-        if (Input.GetKeyDown(KeyCode.H) && healthManager.GetComponent<HealthManager>().currantHealth < 6)
+        if (Input.GetKeyDown(KeyCode.H) && healthManager.GetComponent<HealthManager>().currantHealth < healthManager.GetComponent<HealthManager>().maxHealth)
         {
             healthManager.GetComponent<HealthManager>().currantHealth += 1;
         }
