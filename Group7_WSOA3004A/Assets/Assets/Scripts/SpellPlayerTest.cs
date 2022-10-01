@@ -15,6 +15,8 @@ public class SpellPlayerTest : MonoBehaviour
     public float weaponRange;
     public LayerMask enemyLayer;
     public int weaponDamage =0;
+    public GameObject spellVisualiser;
+    
  
     // Update is called once per frame
     void Update()
@@ -23,6 +25,9 @@ public class SpellPlayerTest : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                spellVisualiser.SetActive(true);
+                StartCoroutine(SpellVis());
+
                 Debug.Log("Cast");
                 Collider2D[] enemies = Physics2D.OverlapCircleAll(weaponPos.position, weaponRange, enemyLayer);
                 for (int i = 0; i < enemies.Length; i++)
@@ -32,12 +37,17 @@ public class SpellPlayerTest : MonoBehaviour
 
                         
                         enemies[i].GetComponent<EnemyAttack>().movementSpeed -= 2;
+                        
+
                         //after a few seconds movement speed will go back to "3".
+
+                       
 
                     }
 
                     
                     Debug.Log(enemies[i].name);
+                    
                 }
 
             }
@@ -49,7 +59,7 @@ public class SpellPlayerTest : MonoBehaviour
         {
             spellCoolDown -= Time.deltaTime;
         }
-
+        
 
     }
 
@@ -58,4 +68,14 @@ public class SpellPlayerTest : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(weaponPos.position, weaponRange);
     }
+
+
+    IEnumerator SpellVis()
+    {
+        yield return new WaitForSeconds(0.3f);
+        spellVisualiser.SetActive(false);
+
+
+    }
+
 }

@@ -32,6 +32,9 @@ public class EnemyHealth : MonoBehaviour
     {
         Instantiate(damText, this.gameObject.transform);
     }
-
+    private void OnDestroy() 
+    {
+        Instantiate(droppedItem, transform.position, transform.rotation);
+    }
 
 }

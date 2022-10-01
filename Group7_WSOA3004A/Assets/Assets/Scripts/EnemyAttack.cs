@@ -9,8 +9,9 @@ public class EnemyAttack : MonoBehaviour
     public float direction;
     public float rayDistance;
     public float movementSpeed;
-   
-   
+    
+
+
     public GameObject weapon;
     
 
@@ -77,6 +78,11 @@ public class EnemyAttack : MonoBehaviour
 
 
         }
+
+ 
+     
+
+        
     }
 
     IEnumerator AttackCoolDown()
