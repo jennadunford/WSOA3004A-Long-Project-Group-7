@@ -17,46 +17,51 @@ public class SpellsManager : MonoBehaviour
     [SerializeField]
     private Sprite openBook;
 
-    public int spellsLeft = 5;
+    [SerializeField]
+    private int spellsLeft = 5;
 
+
+    //I haven't yet coded additional spell slots for the player to unlock but I deff will for the alpha
     void Start()
     {
-        spellsUsedArray[0] = false;
-        spellsUsedArray[1] = false;
-        spellsUsedArray[2] = false;
-        spellsUsedArray[3] = false;
-        spellsUsedArray[4] = false;
+        //sets all the values in the array to false
+        for (int i = 0; i < spellsUsedArray.Length; i++)
+        {
+            spellsUsedArray[i] = false;
+        }
 
-        spellBooksArray[0] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, spellsField.transform);
-        spellBooksArray[1] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, spellsField.transform);
-        spellBooksArray[2] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, spellsField.transform);
-        spellBooksArray[3] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, spellsField.transform);
-        spellBooksArray[4] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, spellsField.transform);
+        //instantiates a spell book prefab in every element of the array
+        for (int i = 0; i < spellBooksArray.Length; i++)
+        {
+            spellBooksArray[i] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, spellsField.transform);
+        }
     }
 
     void Update()
     {
-        Debug.Log(spellsLeft);
-
+        //decreases the number of spells
         if (Input.GetKeyDown(KeyCode.S) && spellsLeft > 0)
         {
             spellsUsedArray[spellsLeft -1] = true;
             spellsLeft--;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && spellsLeft < 5)
+        //increase the number of spells
+        if (Input.GetKeyDown(KeyCode.W) && spellsLeft < 5 && spellsLeft >= 0)
         {
-            spellsUsedArray[spellsLeft - 1] = false;
+            spellsUsedArray[spellsLeft] = false;
             spellsLeft++;
         }
 
+        //changes ui to open book
         for (int i = (spellsLeft -1); i >= 0; i--)
         {
             spellsUsedArray[i] = false;
             spellBooksArray[i].GetComponent<Image>().sprite = openBook;
         }
 
-        for (int i = (spellsLeft); i <= 4; i++)
+        //changes the ui to closed book
+        for (int i = spellsLeft; i <= 4; i++)
         {
             spellsUsedArray[i] = true;
             spellBooksArray[i].GetComponent<Image>().sprite = closedBook;

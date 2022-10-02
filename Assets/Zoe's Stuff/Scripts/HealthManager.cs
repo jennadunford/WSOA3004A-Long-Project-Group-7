@@ -6,52 +6,54 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject prefab;
-    [SerializeField]
-    private GameObject heartField;
-    
-    private GameObject heartOne;
-    private GameObject heartTwo;
-    private GameObject heartThree;
-    private GameObject heartFour;
-    private GameObject heartFive;
-    private GameObject heartSix;
-    private GameObject heartSeven;
-    private GameObject heartEight;
 
     private GameObject[] heartsArray = new GameObject[8];
 
-    public int currantHealth = 5;
-    public int maxHealth = 5;
+    private int currantHealth = 6;
+    private int maxHealth = 6;
 
     public bool firstUpgrade;
     public bool secondUpgrade;
-
+    
+    //I apologise that this script is such a mess, I will clean it up some how for the alpha but I figured this is good enough for now
     private void Start()
     {
-        heartsArray[0] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform); 
-        heartsArray[1] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
-        heartsArray[2] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
-        heartsArray[3] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
-        heartsArray[4] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
-        heartsArray[5] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
-        heartsArray[6] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
-        heartsArray[7] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        //instantiates a heart prefab in every element of the array
+        for (int i = 0; i < heartsArray.Length; i++)
+        {
+            heartsArray[i] = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        }
     }
 
     void Update()
     {
+        //decreases health
+        if (Input.GetKeyDown(KeyCode.Space) && currantHealth > 0)
+        {
+            currantHealth -= 1;
+        }
+
+        //increases health
+        if (Input.GetKeyDown(KeyCode.H) && currantHealth < maxHealth)
+        {
+            currantHealth += 1;
+        }
+
+        //unlocks first upgrade
         if (Input.GetKeyDown(KeyCode.Keypad7) && !firstUpgrade)
         {
             firstUpgrade = true;
             currantHealth++;
         }
 
+        //unlocks second upgrade
         if (Input.GetKeyDown(KeyCode.Keypad8) && !secondUpgrade)
         {
             secondUpgrade = true;
             currantHealth++;
         }
 
+        //increases total health to 7
         if (firstUpgrade)
         {
             heartsArray[6].SetActive(true);
@@ -62,6 +64,7 @@ public class HealthManager : MonoBehaviour
             heartsArray[6].SetActive(false);
         }
 
+        //increases total health to 8
         if (firstUpgrade && secondUpgrade)
         {
             heartsArray[7].SetActive(true);
@@ -72,6 +75,7 @@ public class HealthManager : MonoBehaviour
             heartsArray[7].SetActive(false);
         }
 
+        //increases the number of hearts shown
         if (currantHealth > 0)
         {
             for (int i = (currantHealth - 1); i >= 0; i--)
@@ -80,6 +84,7 @@ public class HealthManager : MonoBehaviour
             }
         }
 
+        //decreases the number of hearrts displayed
         if(currantHealth <= (maxHealth - 1))
         {
             for (int i = currantHealth; i <= (maxHealth - 1); i++)
