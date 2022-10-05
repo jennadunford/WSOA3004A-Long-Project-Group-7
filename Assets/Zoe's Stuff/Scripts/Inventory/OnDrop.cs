@@ -7,7 +7,6 @@ public class OnDrop : MonoBehaviour, IDropHandler
 {
     [SerializeField]
     private GameObject inventory;
-    public GameObject BookStack;
 
     void IDropHandler.OnDrop(PointerEventData eventData)
     {
@@ -18,6 +17,5 @@ public class OnDrop : MonoBehaviour, IDropHandler
             inventory.GetComponent<InventoryManager>().inventContent--;
             Destroy(eventData.pointerDrag);
         }
-
     }
 }

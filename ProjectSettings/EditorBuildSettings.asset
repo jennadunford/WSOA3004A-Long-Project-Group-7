@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Zoe's Stuff/Scenes/Zoe's Work Space 1.unity
-    guid: 853ef2b4d198a1a4ba0ef75eb2a8a317
+    path: Assets/Michaela's Stuff/Scenes/Backups/Zoe's Work Space 1.unity
+    guid: 080bce5925a5fe849bd875fa2b602652
+  - enabled: 1
+    path: Assets/Zoe's Stuff/Scenes/UI Workspace.unity
+    guid: 021972f5453bf724d9c79c288caa6f6e
   m_configObjects: {}
