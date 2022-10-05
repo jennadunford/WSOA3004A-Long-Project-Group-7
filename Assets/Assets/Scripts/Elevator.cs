@@ -11,6 +11,7 @@ public class Elevator : MonoBehaviour
     float elevatorMoveSpeed;
     public GameObject player;
     public Transform parent;
+    public int liftLevel=0;
     
     // Start is called before the first frame update
     void Start()
@@ -26,11 +27,16 @@ public class Elevator : MonoBehaviour
             
             if (Input.GetKeyDown(KeyCode.W))
             {
-                lift.transform.position = new Vector2(lift.transform.position.x, (lift.transform.position.y + 4.5f));
+                if (liftLevel<=0)
+                {
+                    lift.transform.position = new Vector2(lift.transform.position.x, (lift.transform.position.y + 5.5f));
+                    liftLevel +=1;
+                }
+               
+
+
+
                 
-
-
-
 
 
 
@@ -38,8 +44,12 @@ public class Elevator : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S))
             {
-                lift.transform.position = new Vector2(lift.transform.position.x, (lift.transform.position.y - 4.5f));
-
+                
+                if (liftLevel >=0)
+                {
+                    lift.transform.position = new Vector2(lift.transform.position.x, (lift.transform.position.y - 5.5f));
+                    liftLevel -= 1;
+                }
 
             }
         }

@@ -34,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
     }
     private void OnDestroy() 
     {
-        Instantiate(droppedItem, transform.position, transform.rotation);
+        //Instantiate(droppedItem, transform.position, transform.rotation);
     }
 
 }

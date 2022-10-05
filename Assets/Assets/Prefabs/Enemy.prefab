@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -160,7 +160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damText: {fileID: 6760301298286823546, guid: 90ec793171fb554459be8765f02f0cf1, type: 3}
   health: 5
+  droppedItem: {fileID: 0}
 --- !u!61 &949960909367577646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -229,3 +230,5 @@ MonoBehaviour:
   direction: 0
   rayDistance: 3
   movementSpeed: 0
+  weapon: {fileID: 0}
+  attackReady: 1
