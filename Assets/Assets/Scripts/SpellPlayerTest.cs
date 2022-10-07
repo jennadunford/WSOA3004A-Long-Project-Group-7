@@ -8,14 +8,24 @@ public class SpellPlayerTest : MonoBehaviour
     //This will be one of the spells, it will "Stun" the enemy and make them move slower alwoing the player to do stuff like heal? 
 
     float spellCoolDown;
+    float spellCoolDown1;
+    float spellCoolDown2;
+    float spellCoolDown3;
     public float spellCDTimer;
+    public float spellCDTimer1;
+    public float spellCDTimer2;
+    public float spellCDTimer3;
 
+    public bool rageSpellReady=true;
     //base weapon values
     public Transform weaponPos;
     public float weaponRange;
     public LayerMask enemyLayer;
     public int weaponDamage =0;
     public GameObject spellVisualiser;
+    public GameObject player;
+
+    public PlayerAttack playerAttack;
     
  
     // Update is called once per frame
@@ -25,7 +35,7 @@ public class SpellPlayerTest : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                spellVisualiser.SetActive(true);
+                //spellVisualiser.SetActive(true);
                 StartCoroutine(SpellVis());
 
                 Debug.Log("Cast");
@@ -59,7 +69,34 @@ public class SpellPlayerTest : MonoBehaviour
         {
             spellCoolDown -= Time.deltaTime;
         }
-        
+
+
+        //NEXT SPELL
+        //if the rage spell is available.
+        if (rageSpellReady==true)
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                //player can't use the spell again
+                rageSpellReady = false;
+                //Start the cooldown for the rage spell.
+                StartCoroutine(RageSpellTime());
+
+                player.GetComponent<PlayerController>().weaponDamage += 2;
+            }
+
+
+            spellCoolDown1 = spellCDTimer1;
+        }
+        else
+        {
+            spellCoolDown1 -= Time.deltaTime;
+        }
+
+
+
+
+
 
     }
 
@@ -73,9 +110,30 @@ public class SpellPlayerTest : MonoBehaviour
     IEnumerator SpellVis()
     {
         yield return new WaitForSeconds(0.3f);
-        spellVisualiser.SetActive(false);
-
+        //spellVisualiser.SetActive(false);
 
     }
+
+    IEnumerator RageSpellTime()
+    {
+        yield return new WaitForSeconds(5f);
+        rageSpellReady = true;
+        player.GetComponent<PlayerAttack>().weaponDamage =1;
+        StartCoroutine(RageCooldownTime());
+        
+       // spellVisualiser.SetActive(false);
+
+    }
+
+    IEnumerator RageCooldownTime()
+    {
+        yield return new WaitForSeconds(5f);
+        rageSpellReady = true;
+       
+
+        // spellVisualiser.SetActive(false);
+
+    }
+
 
 }

@@ -6,8 +6,9 @@ using TMPro;
 public class EnemyHealth : MonoBehaviour
 {
     public GameObject damText;
-    public int health = 5;
+    public int health = 0;
     public GameObject droppedItem;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
             Destroy(this.gameObject);
 
         }
-
+        damText.GetComponentInChildren<TextMeshPro>().text = player.GetComponent<PlayerController>().weaponDamage.ToString();
 
     }
     

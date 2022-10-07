@@ -11,9 +11,12 @@ public class PlayerAttack : MonoBehaviour
     public Transform weaponPos;
     public float weaponRange;
     public LayerMask enemyLayer;
-    public int weaponDamage=1;
+    public int weaponDamage;
 
-
+    private void Start()
+    {
+        weaponDamage = 1;
+    }
 
     // Update is called once per frame
     void Update()

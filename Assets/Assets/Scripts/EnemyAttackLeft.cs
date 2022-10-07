@@ -1,33 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class EnemyAttack : MonoBehaviour
+public class EnemyAttackLeft : MonoBehaviour
 {
     public GameObject player;
     public GameObject raycastStart;
-   
+
     public float direction;
     public float rayDistance;
-    public float movementSpeed;
-    
+    public float movementSpeed=0;
 
 
-    
 
     
 
-    public bool attackReady=true;
 
-    float attackCoolDown=5;
+
+    public bool attackReady = true;
+
+    float attackCoolDown = 5;
 
     // Start is called before the first frame update
     void Start()
     {
-        direction=1;
-        movementSpeed = 3;
-        
+        direction = 1;
+        ;
+
 
 
     }
@@ -37,18 +36,18 @@ public class EnemyAttack : MonoBehaviour
     {
         //this.gameObject.transform.position = Vector2.MoveTowards(new Vector3(transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z), 6*Time.deltaTime);
 
-        RaycastHit2D hit = Physics2D.Raycast(raycastStart.transform.position, Vector2.right, rayDistance);
-      
+        RaycastHit2D hit = Physics2D.Raycast(raycastStart.transform.position, Vector2.left, rayDistance);
+
         if (hit.collider != null)
         {
             //Debug.Log("Real Stuff");
-            Debug.DrawRay(raycastStart.transform.position, Vector2.right, Color.red);
+            Debug.DrawRay(raycastStart.transform.position, Vector2.left, Color.red);
             if (hit.collider.tag == "Player")
             {
 
                 this.gameObject.transform.position = Vector2.MoveTowards(new Vector3(transform.position.x, transform.position.y, transform.position.z),
-                new Vector3(player.transform.position.x -1.3f, transform.position.y, player.transform.position.z), movementSpeed * Time.deltaTime);
-                                //attackReady = true;
+                new Vector3(player.transform.position.x + 1.3f, transform.position.y, player.transform.position.z), movementSpeed * Time.deltaTime);
+                //attackReady = true;
                 Attack();
 
             }
@@ -71,7 +70,7 @@ public class EnemyAttack : MonoBehaviour
         {
             //attackReady = false;
             //Debug.Log("I sleep");
-            Debug.DrawRay(raycastStart.transform.position, Vector2.right, Color.green);
+            Debug.DrawRay(raycastStart.transform.position, Vector2.left, Color.green);
 
 
             attackCoolDown = 5;
@@ -83,7 +82,7 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-        
+
 
     IEnumerator AttackCoolDown()
     {
@@ -109,5 +108,4 @@ public class EnemyAttack : MonoBehaviour
 
         //}
     }
-
 }

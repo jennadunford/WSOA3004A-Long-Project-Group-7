@@ -35,8 +35,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        Alpha = cooldownVisaliser.GetComponent<SpriteRenderer>().color;
-        cooldownVisaliserAlpha = Alpha.a;
+        //Alpha = cooldownVisaliser.GetComponent<SpriteRenderer>().color;
+       // cooldownVisaliserAlpha = Alpha.a;
     }
 
 
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
                         enemies[i].GetComponent<EnemyHealth>().ShowDamageTaken();
                         Debug.Log(enemies[i].name);
                     }
-                    Alpha.a = 0;
+                    //Alpha.a = 0;
 
                 }
 
@@ -70,8 +70,8 @@ public class PlayerController : MonoBehaviour
                  
 
 
-                Alpha.a += Time.deltaTime;
-                cooldownVisaliser.GetComponent<SpriteRenderer>().color=Alpha;
+                //Alpha.a += Time.deltaTime;
+                //cooldownVisaliser.GetComponent<SpriteRenderer>().color=Alpha;
 
 
             }
