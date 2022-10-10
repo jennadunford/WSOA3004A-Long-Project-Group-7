@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7804185640075025180}
   - component: {fileID: 7804185640075025182}
   - component: {fileID: 4213308750367319402}
+  - component: {fileID: -5363775551138888369}
   m_Layer: 6
   m_Name: Str_L_Enemy
   m_TagString: Untagged
@@ -166,6 +167,20 @@ MonoBehaviour:
   rayDistance: 3
   movementSpeed: 3
   attackReady: 1
+--- !u!114 &-5363775551138888369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804185640075025183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80706f7ecb46abe43871d199211f915c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookA: {fileID: 3805825832357965479, guid: 4adcf03d1b265e94b8f1201f6346ce4b, type: 3}
+  bookB: {fileID: 4838556717775133921, guid: 1cae92ebafe94fb419b6d39ae08b6e4f, type: 3}
 --- !u!1 &7804185640094210023
 GameObject:
   m_ObjectHideFlags: 0

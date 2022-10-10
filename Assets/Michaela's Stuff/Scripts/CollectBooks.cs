@@ -20,7 +20,7 @@ public class CollectBooks : MonoBehaviour
         if(enemy == false)
         {
             book.SetActive(true);
-            Debug.Log("Book is active. Enemy is dead.");
+            //Debug.Log("Book is active. Enemy is dead.");
         }
     }
 
