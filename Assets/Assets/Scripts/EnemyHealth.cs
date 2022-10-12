@@ -44,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
     {
         //Instantiate(droppedItem, transform.position, transform.rotation);
         //this.GetComponent<BookDropScript>().DropBook();
-        parentOfEnemy.gameObject.GetComponent<BookDropScript>().DropBook();
+        //parentOfEnemy.gameObject.GetComponent<BookDropScript>().DropBook();
 
 
         
