@@ -4775,11 +4775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ae5eb1ec3d38947a97540d8bcf1ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueOne: {fileID: 1207005234}
-  DialogueTwo: {fileID: 114938167}
-  Patron: {fileID: 1491226405}
-  BookOne: {fileID: 0}
-  BookInventory: {fileID: 18939268}
 --- !u!95 &770070154
 Animator:
   serializedVersion: 4
@@ -4800,6 +4795,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &770070160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770070135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6475d7fc63a2c409f1f0f627777037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 10
+  enemyDamText: {fileID: 0}
+  Alpha: {r: 0, g: 0, b: 0, a: 0}
+  weaponRange: 0.65
+  weaponDamage: 1
+  weaponEqipped: 0
 --- !u!1 &773434550
 GameObject:
   m_ObjectHideFlags: 0
@@ -11478,17 +11491,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ae3733406502e40a5cd52745798986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  horizontal: 0
+  vertical: 0
   runSpeed: 10
+  isFacingRight: 1
   playerHealth: 10
   enemyDamText: {fileID: 6760301298286823546, guid: 57780a97c522f5548b38cee06490bd08, type: 3}
+  attackCoolDown: 0
   attackCDTimer: 0.1
   weaponPos: {fileID: 0}
   enemyLayer:
-    serializedVersion: 2
     m_Bits: 0
   cooldownVisaliser: {fileID: 0}
   cooldownVisaliserAlpha: 0
-  Alpha: {r: 0, g: 0, b: 0, a: 0}
+  Alpha:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   weaponRange: 0.65
   weaponDamage: 1
   weaponEqipped: 0
