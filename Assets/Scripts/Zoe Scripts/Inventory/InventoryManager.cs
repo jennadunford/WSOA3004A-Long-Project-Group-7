@@ -24,7 +24,7 @@ public class InventoryManager : MonoBehaviour
     private GameObject[] booksArray = new GameObject[5];
     private GameObject[] slotsArray = new GameObject[4];
 
-    //[System.NonSerialized]
+    [System.NonSerialized]
     public int inventContent = 0;
 
     //I am aware that I never actually use empty array and should remove it, but I intend to use it later, its a surprise tool for later yk
