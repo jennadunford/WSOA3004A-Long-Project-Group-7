@@ -4,39 +4,39 @@ using UnityEngine;
 
 public class CollectBooks : MonoBehaviour
 {
-    public GameObject bookOne;
-    //public GameObject bookTwo;
+    //public GameObject bookOne;
+    ////public GameObject bookTwo;
     
-    public GameObject enemyOne;
-    //public GameObject enemyTwo;
+    //public GameObject enemyOne;
+    ////public GameObject enemyTwo;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        bookOne.SetActive(false);
-        //bookTwo.SetActive(false);
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+    //    bookOne.SetActive(false);
+    //    //bookTwo.SetActive(false);
 
-        enemyOne.SetActive(true);
-        //enemyTwo.SetActive(true);
-    }
+    //    enemyOne.SetActive(true);
+    //    //enemyTwo.SetActive(true);
+    //}
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(enemyOne == false)
-        {
-            bookOne.SetActive(true);
-            //Debug.Log("Book is active. Enemy is dead.");
-        }
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    if(enemyOne == false)
+    //    {
+    //        bookOne.SetActive(true);
+    //        //Debug.Log("Book is active. Enemy is dead.");
+    //    }
 
-        //if(enemyTwo == false)
-        //{
-        //    bookTwo.SetActive(true);
+    //    //if(enemyTwo == false)
+    //    //{
+    //    //    bookTwo.SetActive(true);
 
-        //    Debug.Log("Second Book Active");
-        //}
+    //    //    Debug.Log("Second Book Active");
+    //    //}
 
-    }
+    //}
 
     //void OnTriggerEnter(Collision col)
     //{

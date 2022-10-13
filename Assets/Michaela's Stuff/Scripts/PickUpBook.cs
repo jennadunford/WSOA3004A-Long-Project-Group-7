@@ -31,30 +31,39 @@ public class PickUpBook : MonoBehaviour
     //    }
     //}
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Destroy(this.gameObject);
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        Destroy(this.gameObject);
 
-            Debug.Log("Book collided");
+    //        Debug.Log("Book collided");
 
-        }
-    }
+    //    }
+    //}
 
-    private void OnDestroy()
-    {
-        //make the book in the inventory
-        Debug.Log("Has Book");
-        //set the intake book in the inventory manager
-        //inventoryManager.GetComponent<InventoryManager>().intakeBook = BookOne;
-        ////increases intakeNum which tells the inventory manager to instantiate the prefab
-        //inventoryManager.GetComponent<InventoryManager>().intakeNum++;
+    //private void OnDestroy()
+    //{
+    //    //make the book in the inventory
+    //    Debug.Log("Has Book");
+    //    //set the intake book in the inventory manager
+    //    //inventoryManager.GetComponent<InventoryManager>().intakeBook = BookOne;
+    //    ////increases intakeNum which tells the inventory manager to instantiate the prefab
+    //    //inventoryManager.GetComponent<InventoryManager>().intakeNum++;
         
-        Destroy(gameObject);
+    //    Destroy(gameObject);
         
-        BookCollected.SetActive(true);
+    //    BookCollected.SetActive(true);
 
+    //    //set the intake book in the inventory manager
+    //    inventoryManager.GetComponent<InventoryManager>().intakeBook = prefab;
+    //    //increases intakeNum which tells the inventory manager to instantiate the prefab
+    //    inventoryManager.GetComponent<InventoryManager>().intakeNum++;
+    //    Destroy(gameObject);
+    //}
+
+    public void AddBook()
+    {
         //set the intake book in the inventory manager
         inventoryManager.GetComponent<InventoryManager>().intakeBook = prefab;
         //increases intakeNum which tells the inventory manager to instantiate the prefab

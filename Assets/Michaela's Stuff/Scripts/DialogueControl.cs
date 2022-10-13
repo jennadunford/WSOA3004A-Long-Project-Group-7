@@ -32,7 +32,7 @@ public class DialogueControl : MonoBehaviour
 
         if (collision.gameObject == Patron && BookOne == false)
         {
-            DialogueTwo.SetActive(true);
+            //DialogueTwo.SetActive(true);
             BookInventory.SetActive(false);
         }
     }

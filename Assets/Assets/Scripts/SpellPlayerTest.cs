@@ -31,58 +31,58 @@ public class SpellPlayerTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spellCoolDown <= 0)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                //spellVisualiser.SetActive(true);
-                StartCoroutine(SpellVis());
+        //if (spellCoolDown <= 0)
+        //{
+        //    if (Input.GetKeyDown(KeyCode.E))
+        //    {
+        //        //spellVisualiser.SetActive(true);
+        //        StartCoroutine(SpellVis());
 
-                Debug.Log("Cast");
-                Collider2D[] enemies = Physics2D.OverlapCircleAll(weaponPos.position, weaponRange, enemyLayer);
-                for (int i = 0; i < enemies.Length; i++)
-                {
-                    if(enemies[i].GetComponent<EnemyAttack>().movementSpeed> 1)
-                    {
+        //        Debug.Log("Cast");
+        //        Collider2D[] enemies = Physics2D.OverlapCircleAll(weaponPos.position, weaponRange, enemyLayer);
+        //        for (int i = 0; i < enemies.Length; i++)
+        //        {
+        //            if(enemies[i].GetComponent<EnemyAttack>().movementSpeed> 1)
+        //            {
 
                         
-                        enemies[i].GetComponent<EnemyAttack>().movementSpeed -= 2;
+        //                enemies[i].GetComponent<EnemyAttack>().movementSpeed -= 2;
                         
 
-                        //after a few seconds movement speed will go back to "3".
+        //                //after a few seconds movement speed will go back to "3".
 
                        
 
-                    }
+        //            }
 
                     
-                    Debug.Log(enemies[i].name);
+        //            Debug.Log(enemies[i].name);
                     
-                }
+        //        }
 
-            }
+        //    }
 
 
-            spellCoolDown = spellCDTimer;
-        }
-        else
-        {
-            spellCoolDown -= Time.deltaTime;
-        }
+        //    spellCoolDown = spellCDTimer;
+        //}
+        //else
+        //{
+        //    spellCoolDown -= Time.deltaTime;
+        //}
 
 
         //NEXT SPELL
         //if the rage spell is available.
         if (rageSpellReady==true)
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 //player can't use the spell again
                 rageSpellReady = false;
                 //Start the cooldown for the rage spell.
                 StartCoroutine(RageSpellTime());
 
-                player.GetComponent<PlayerController>().weaponDamage += 2;
+                player.GetComponent<PlayerController>().weaponDamage += 1;
             }
 
 
@@ -116,9 +116,9 @@ public class SpellPlayerTest : MonoBehaviour
 
     IEnumerator RageSpellTime()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         rageSpellReady = true;
-        player.GetComponent<PlayerAttack>().weaponDamage =1;
+        player.GetComponent<PlayerController>().weaponDamage -=1;
         StartCoroutine(RageCooldownTime());
         
        // spellVisualiser.SetActive(false);

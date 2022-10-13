@@ -7,7 +7,7 @@ public class EnemyAttack : MonoBehaviour
 {
     public GameObject player;
     public GameObject raycastStart;
-   
+    public GameObject hearts;
     public float direction;
     public float rayDistance;
     public float movementSpeed;
@@ -74,7 +74,7 @@ public class EnemyAttack : MonoBehaviour
             Debug.DrawRay(raycastStart.transform.position, Vector2.right, Color.green);
 
 
-            attackCoolDown = 5;
+            attackCoolDown = 2;
             StopCoroutine(AttackCoolDown());
 
 
@@ -102,6 +102,12 @@ public class EnemyAttack : MonoBehaviour
             player.gameObject.GetComponent<PlayerController>().playerHealth -= 1;
             StartCoroutine(AttackCoolDown());
             player.gameObject.GetComponent<PlayerController>().ShowEnemyDamageTaken();
+            hearts.gameObject.GetComponent<HealthManager>().currantHealth -= 1;
+        }
+
+        if (player.gameObject.GetComponent<PlayerController>().playerHealth == 0)
+        {
+            SceneManager.LoadScene("ArtTest");
         }
 
         //if (playerHealth == 0)

@@ -9,7 +9,7 @@ public class RestartScript : MonoBehaviour
     {
         if (Input.GetKeyDown("r"))
         {
-            SceneManager.LoadScene("Zoe's Work Space 1");
+            SceneManager.LoadScene("ArtTest");
             Debug.Log("Restart");
         }
     }

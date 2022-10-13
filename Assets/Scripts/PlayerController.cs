@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     float vertical;
     public float runSpeed = 10.0f;
     bool isFacingRight=true;
-    public int playerHealth=10;
+    public int playerHealth= 3;
     public GameObject enemyDamText;
     
 
