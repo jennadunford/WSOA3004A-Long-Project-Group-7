@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 3853443900471324136}
+  inventoryManager: {fileID: 5414058055322545714, guid: 8f1eb62cd1e8fab4bb7aefec7c3a6408, type: 3}
 --- !u!225 &-1105672136560949318
 CanvasGroup:
   m_ObjectHideFlags: 0

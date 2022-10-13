@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class RemoveFromInventory : MonoBehaviour, IDragHandler, IEndDragHandler
+public class RemoveFromInventory : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     [SerializeField]
     public GameObject prefab;
@@ -25,5 +25,10 @@ public class RemoveFromInventory : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         transform.localPosition = Vector3.zero;
         canvasGroup.blocksRaycasts = true;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        
     }
 }
