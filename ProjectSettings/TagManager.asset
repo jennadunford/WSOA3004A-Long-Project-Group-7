@@ -6,6 +6,27 @@ TagManager:
   tags:
   - BookOne
   - BookSlot
+  - Romance
+  - Children
+  - Fantasy
+  - Adventure
+  - Mystery
+  - Horror
+  - RomanceAndChildren
+  - RomanceAndFantasy
+  - RomanceAndAdventure
+  - RomanceAndMystery
+  - RomanceAndHorror
+  - ChildrenAndFantasy
+  - ChildrenAndAdventure
+  - ChildrenAndMystery
+  - ChildrenAndHorror
+  - FantasyAndAdventure
+  - FantasyAndMystery
+  - FantasyAndHorror
+  - AdventureAndMystery
+  - AdventureAndHorror
+  - MysteryAndHorror
   layers:
   - Default
   - TransparentFX
