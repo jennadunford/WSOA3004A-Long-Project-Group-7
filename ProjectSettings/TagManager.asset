@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BookOne
   - BookSlot
+  - Patron
   layers:
   - Default
   - TransparentFX
