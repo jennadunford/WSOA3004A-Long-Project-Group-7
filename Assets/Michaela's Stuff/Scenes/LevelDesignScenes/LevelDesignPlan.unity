@@ -1741,6 +1741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695620861}
   - component: {fileID: 695620860}
+  - component: {fileID: 695620862}
   m_Layer: 0
   m_Name: Elevator
   m_TagString: Untagged
@@ -1815,6 +1816,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &695620862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695620859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c91dd15012ecdc4e8f092ec7fdac081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOn: 1
+  lift: {fileID: 695620859}
+  player: {fileID: 0}
+  parent: {fileID: 0}
+  liftLevel: 0
 --- !u!1 &698724188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,6 +3686,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1690606504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1690606505}
+  m_Layer: 0
+  m_Name: PatronSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1690606505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690606504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.91, y: -3.75, z: 6.460694}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790052912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3847,6 +3896,7 @@ GameObject:
   - component: {fileID: 2037006200}
   - component: {fileID: 2037006199}
   - component: {fileID: 2037006198}
+  - component: {fileID: 2037006201}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3920,6 +3970,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037006201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037006197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b87ae814ddb5e4daafe8c50406307d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patron: {fileID: 3428999274442361983, guid: 10f75d65b027a924791d383424070f82, type: 3}
+  spawnHere: {fileID: 1690606505}
 --- !u!1 &2052863605
 GameObject:
   m_ObjectHideFlags: 0

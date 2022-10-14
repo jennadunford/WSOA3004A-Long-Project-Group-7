@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class Elevator : MonoBehaviour
 {
     //This script will controll the movement of the elevator allowing the plyer to move to different levels in the game. 
     [SerializeField]
-    bool playerOn=false;
+    bool playerOn=true;
+    bool levelreached = true;
     public GameObject lift;
     float elevatorMoveSpeed;
     public GameObject player;
@@ -24,19 +26,21 @@ public class Elevator : MonoBehaviour
     {
         if (playerOn == true)
         {
-            
+
             if (Input.GetKeyDown(KeyCode.W))
             {
-                if (liftLevel<=0)
+                if (levelreached == true)
                 {
-                    lift.transform.position = new Vector2(lift.transform.position.x, (lift.transform.position.y + 5.5f));
-                    liftLevel +=1;
+                    if (liftLevel <= 1)
+                    {
+                       
+                        transform.DOMoveY(transform.position.y + 4.8728f, 1);
+                        liftLevel += 1;
+                        levelreached = false;
+                        StartCoroutine(LiftTime());
+                    }
                 }
-               
 
-
-
-                
 
 
 
@@ -44,11 +48,17 @@ public class Elevator : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S))
             {
-                
-                if (liftLevel >=0)
+
+                if (levelreached == true)
                 {
-                    lift.transform.position = new Vector2(lift.transform.position.x, (lift.transform.position.y - 5.5f));
-                    liftLevel -= 1;
+                    if (liftLevel >= 1)
+                    {
+                       
+                        transform.DOMoveY(transform.position.y - 4.8728f, 1);
+                        liftLevel -= 1;
+                        levelreached = false;
+                        StartCoroutine(LiftTime());
+                    }
                 }
 
             }
@@ -77,5 +87,11 @@ public class Elevator : MonoBehaviour
     {
         playerOn = false;
         player.transform.SetParent(null);
+    }
+
+    IEnumerator LiftTime()
+    {
+        yield return new WaitForSeconds(1.1f);
+        levelreached = true;
     }
 }
