@@ -10,15 +10,15 @@ public class PickUpBook : MonoBehaviour
     [SerializeField]
     private GameObject inventoryManager;
 
-    GameObject Player;
-    public GameObject BookOne;
-    public GameObject BookCollected;
+    //GameObject Player;
+    //public GameObject BookOne;
+    //public GameObject BookCollected;
 
-    void Awake()
-    {
-        Player = GameObject.FindGameObjectWithTag("Player");
-        BookCollected.SetActive(false);
-    }
+    //void Awake()
+    //{
+    //    Player = GameObject.FindGameObjectWithTag("Player");
+    //    BookCollected.SetActive(false);
+    //}
 
     public void AddBook()
     {
