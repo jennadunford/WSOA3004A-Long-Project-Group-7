@@ -14,7 +14,8 @@ public class Elevator : MonoBehaviour
     public GameObject player;
     public Transform parent;
     public int liftLevel=0;
-    
+    float levelPos = 4.8728f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,7 @@ public class Elevator : MonoBehaviour
                     if (liftLevel <= 1)
                     {
                        
-                        transform.DOMoveY(transform.position.y + 4.8728f, 1);
+                        transform.DOMoveY(transform.position.y + levelPos, 1);
                         liftLevel += 1;
                         levelreached = false;
                         StartCoroutine(LiftTime());
@@ -54,7 +55,7 @@ public class Elevator : MonoBehaviour
                     if (liftLevel >= 1)
                     {
                        
-                        transform.DOMoveY(transform.position.y - 4.8728f, 1);
+                        transform.DOMoveY(transform.position.y - levelPos, 1);
                         liftLevel -= 1;
                         levelreached = false;
                         StartCoroutine(LiftTime());
