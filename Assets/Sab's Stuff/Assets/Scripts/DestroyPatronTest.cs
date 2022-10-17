@@ -27,7 +27,10 @@ public class DestroyPatronTest : MonoBehaviour
     IEnumerator TestSpawnTimer()
     {
         yield return new WaitForSeconds(10f);
+
+        GameObject.FindGameObjectWithTag("Bake").GetComponent<BookPile>().AddBookToPile();
         Destroy(this.gameObject);
+
     }
 
     //If the player places the correct book in this inventory then this patron will be destroyed. 
