@@ -10,7 +10,7 @@ public class DestroyPatronTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+         
     }
 
     // Update is called once per frame
@@ -24,11 +24,13 @@ public class DestroyPatronTest : MonoBehaviour
         StartCoroutine(TestSpawnTimer());
     }
 
+    //this is used to test if the Patron Script works.
     IEnumerator TestSpawnTimer()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
 
-        GameObject.FindGameObjectWithTag("Bake").GetComponent<BookPile>().AddBookToPile();
+  
+        GameObject.Find("PatronSpawnPoint").GetComponent<BookPile>().AddBookToPile();
         Destroy(this.gameObject);
 
     }

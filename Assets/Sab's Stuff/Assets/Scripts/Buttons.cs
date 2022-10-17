@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class Buttons : MonoBehaviour
 {
-    GameObject slot;
-    // Start is called before the first frame update
-    void Start()
-    {
-        slot = GameObject.FindGameObjectWithTag("Slo");
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
+
+   //This serves as a place holder for adding the book to the players inventroy from the return pile.
 
     public void Rem()
     {
