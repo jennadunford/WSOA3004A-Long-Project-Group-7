@@ -15,49 +15,59 @@ public class ClockController : MonoBehaviour
 
     private float timePassed = 0;
     private float speed = 2.5f;
-    private float modifier;
+    public float modifier;
     private bool dayTime = false;
-    private bool paused = false;
-    private bool alreadyRan = false;
+    private bool increaseDay = false;
+
 
     private void Update()
     {
-        if (!paused)
+        speed = 360 / duration;
+        timePassed += Time.deltaTime;
+        modifier = -timePassed * speed;
+
+        if (modifier < -360)
         {
-            speed = 360 / duration;
-            timePassed += Time.deltaTime;
-            modifier = -timePassed * speed;
-
-            if (modifier < -360)
-            {
-                timePassed = 0;
-                alreadyRan = false;
-            }
-
-            this.gameObject.GetComponent<Transform>().eulerAngles = new Vector3(0, 0, modifier);
-
-            if (modifier > -90 || modifier < -270)
-            {
-                dayTime = true;
-            }
-            else
-            {
-                dayTime = false;
-            }
+            timePassed = 0;
         }
         
-        if (modifier < -270 && modifier > -300 && !alreadyRan)
+        if (modifier < -90 && modifier > -180)
         {
-            paused = true;
-            alreadyRan = true;
+            increaseDay = false;
+        }
+
+        this.gameObject.GetComponent<Transform>().eulerAngles = new Vector3(0, 0, modifier);
+
+        if (modifier > -90 || modifier < -270)
+        {
+            dayTime = true;
+        }
+        else
+        {
+            dayTime = false;
+        }
+        
+        if (!dayTime)
+        {
             popUp.SetActive(true);
+        }
+        else
+        {
+            popUp.SetActive(false);
+        }
+
+        if (modifier < -270 && !increaseDay)
+        {
+            weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
+            increaseDay = true;
         }
     }
 
     public void NewDay()
     {
-        paused = false;
         popUp.SetActive(false);
         weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
+        increaseDay = true;
+        timePassed = duration/4 * 3;
     }
 }

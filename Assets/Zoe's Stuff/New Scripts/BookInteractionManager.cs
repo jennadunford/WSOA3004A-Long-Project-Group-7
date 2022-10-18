@@ -5,17 +5,28 @@ using UnityEngine.EventSystems;
 
 public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
-    [SerializeField]
-    private GameObject inventoryManager;
-
-    public GameObject prefab;
-
     public bool inInvent = false;
     private CanvasGroup trialCanvasGroup;
+
+    [SerializeField]
+    private GameObject slot1;
+    [SerializeField]
+    private GameObject slot2;
+    [SerializeField]
+    private GameObject slot3;
+    [SerializeField]
+    private GameObject slot4;
+
+    private GameObject[] slotsArray = new GameObject[4];
 
     private void Start()
     {
         trialCanvasGroup = gameObject.GetComponent<CanvasGroup>();
+
+        slotsArray[0] = slot1;
+        slotsArray[1] = slot2;
+        slotsArray[2] = slot3;
+        slotsArray[3] = slot4;
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -31,12 +42,14 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!inInvent && !inventoryManager.GetComponent<InventoryManager>().inventFull)
+        if (!inInvent)
         {
-            inventoryManager.GetComponent<InventoryManager>().intakeBook = prefab;
-            inventoryManager.GetComponent<InventoryManager>().intakeNum++;
-            inInvent = true;
-            Destroy(gameObject);
-        }        
+            for (int i = 0; slotsArray[i].transform.childCount == 0 && i < 4; i++)
+            {
+                this.gameObject.transform.parent = slotsArray[i].transform;
+                this.gameObject.GetComponent<Transform>().position = slotsArray[i].GetComponent<Transform>().position;
+                inInvent = true;
+            }
+        }
     }
 }

@@ -12,7 +12,7 @@ public class LabelDragAndDrop : MonoBehaviour, IDropHandler
         {
             if (eventData.pointerDrag.tag == "Label")
             {
-                child = Instantiate(eventData.pointerDrag.GetComponent<BookInteractionManager>().prefab, gameObject.transform.position, Quaternion.Euler(0, 0, 0), gameObject.transform);
+                //child = Instantiate(eventData.pointerDrag.GetComponent<BookInteractionManager>().prefab, gameObject.transform.position, Quaternion.Euler(0, 0, 0), gameObject.transform);
                 eventData.pointerDrag.GetComponent<Transform>().position = gameObject.GetComponent<Transform>().position;
                 Destroy(eventData.pointerDrag);
                 child.GetComponent<CanvasGroup>().blocksRaycasts = true;
