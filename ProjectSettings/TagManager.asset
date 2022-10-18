@@ -5,8 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Book
-  - cat2
   - Label
+  - Bake
+  - Patron
+  - cat1
+  - cat3
+  - cat4
+  - cat5
+  - cat2
   layers:
   - Default
   - TransparentFX
