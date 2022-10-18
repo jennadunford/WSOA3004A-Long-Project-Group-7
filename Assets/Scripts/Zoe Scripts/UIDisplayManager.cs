@@ -16,7 +16,7 @@ public class UIDisplayManager : MonoBehaviour
     private void Start()
     {
         library = libraryUI.GetComponent<CanvasGroup>();
-        dungeon = dungeonUI.GetComponent<CanvasGroup>();
+        //dungeon = dungeonUI.GetComponent<CanvasGroup>();
     }
     private void Update()
     {

@@ -7,6 +7,7 @@ TagManager:
   - BookOne
   - BookSlot
   - Patron
+<<<<<<< Updated upstream
   - Slo
   - Bake
   - cat1
@@ -15,6 +16,9 @@ TagManager:
   - cat4
   - cat5
   - cat6
+=======
+  - Book
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

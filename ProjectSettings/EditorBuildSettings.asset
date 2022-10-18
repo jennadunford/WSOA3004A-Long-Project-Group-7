@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Sab's Stuff/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Michaela's Stuff/Scenes/Backups/Zoe's Work Space 1.unity
-    guid: 080bce5925a5fe849bd875fa2b602652
-  - enabled: 1
-    path: Assets/Zoe's Stuff/Scenes/UI Workspace.unity
-    guid: 021972f5453bf724d9c79c288caa6f6e
+    path: Assets/Zoe's Stuff/Scenes/Main Menu.unity
+    guid: d2e1bafb22fc56f40a79a42dc5bcc3d0
   - enabled: 1
     path: Assets/Michaela's Stuff/Scenes/ArtTest.unity
     guid: 0d45f2b275161d048a8fcdd26895cdea
