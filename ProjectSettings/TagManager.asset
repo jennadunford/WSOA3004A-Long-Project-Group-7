@@ -9,11 +9,11 @@ TagManager:
   - Bake
   - Patron
   - Served
-  - 'Adventure '
   - Horror
   - Fantasy
   - Romance
   - BookOne
+  - Adventure
   layers:
   - Default
   - TransparentFX

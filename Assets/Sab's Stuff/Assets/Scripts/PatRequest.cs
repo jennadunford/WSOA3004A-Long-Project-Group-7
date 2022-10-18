@@ -40,7 +40,7 @@ public class PatRequest : MonoBehaviour
             patronChild.gameObject.tag = category1;
             Debug.Log(patronChild.gameObject.tag);
 
-        } else if (chance > 10 && chance < 20)
+        } else if (chance > 11 && chance < 20)
         {
             patronChild.gameObject.tag = category2;
             Debug.Log(patronChild.gameObject.tag);
