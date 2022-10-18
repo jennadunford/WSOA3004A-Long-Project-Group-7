@@ -4,21 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - BookOne
-  - BookSlot
-  - Patron
-<<<<<<< Updated upstream
-  - Slo
-  - Bake
-  - cat1
-  - cat2
-  - cat3
-  - cat4
-  - cat5
-  - cat6
-=======
   - Book
->>>>>>> Stashed changes
+  - cat2
+  - Label
   layers:
   - Default
   - TransparentFX
@@ -26,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Enemy
+  - 
   - 
   - 
   - 
@@ -55,10 +43,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: BookSlots
-    uniqueID: 1485672989
-    locked: 0
-  - name: Books
-    uniqueID: 29482879
     locked: 0

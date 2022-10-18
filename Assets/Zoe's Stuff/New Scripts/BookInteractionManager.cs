@@ -5,8 +5,12 @@ using UnityEngine.EventSystems;
 
 public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
+    [SerializeField]
+    private GameObject inventoryManager;
+
     public GameObject prefab;
-    
+
+    public bool inInvent = false;
     private CanvasGroup trialCanvasGroup;
 
     private void Start()
@@ -27,6 +31,12 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("fs");
+        if (!inInvent && !inventoryManager.GetComponent<InventoryManager>().inventFull)
+        {
+            inventoryManager.GetComponent<InventoryManager>().intakeBook = prefab;
+            inventoryManager.GetComponent<InventoryManager>().intakeNum++;
+            inInvent = true;
+            Destroy(gameObject);
+        }        
     }
 }
