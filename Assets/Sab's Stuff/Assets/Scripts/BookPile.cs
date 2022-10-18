@@ -6,7 +6,7 @@ public class BookPile : MonoBehaviour
 {
     public Transform[] pile;
     
-    public GameObject thebutton;
+    public GameObject returnedBook;
     public GameObject parentobject;
     
 
@@ -31,45 +31,45 @@ public class BookPile : MonoBehaviour
          if (pile[0].gameObject.GetComponent<RemoveFromPile>().isUsed == false)
         {
             
-            Instantiate(thebutton, pile[0]);
+            Instantiate(returnedBook, pile[0]);
 
-            thebutton.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
+            returnedBook.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
            
             pile[0].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
         }
         else if (pile[1].gameObject.GetComponent<RemoveFromPile>().isUsed == false)
         {
 
-            Instantiate(thebutton, pile[1]);
+            Instantiate(returnedBook, pile[1]);
 
-            thebutton.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
+            returnedBook.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
 
             pile[1].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
         }
         else if (pile[2].gameObject.GetComponent<RemoveFromPile>().isUsed == false)
         {
 
-            Instantiate(thebutton, pile[2]);
+            Instantiate(returnedBook, pile[2]);
 
-            thebutton.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
+            returnedBook.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
 
             pile[2].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
         }
         else if (pile[3].gameObject.GetComponent<RemoveFromPile>().isUsed == false)
         {
 
-            Instantiate(thebutton, pile[3]);
+            Instantiate(returnedBook, pile[3]);
 
-            thebutton.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
+            returnedBook.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
 
             pile[3].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
         }
         else if (pile[4].gameObject.GetComponent<RemoveFromPile>().isUsed == false)
         {
 
-            Instantiate(thebutton, pile[4]);
+            Instantiate(returnedBook, pile[4]);
 
-            thebutton.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
+            returnedBook.tag = GameObject.FindGameObjectWithTag("Patron").GetComponent<PatRequest>().patronChild.tag;
 
             pile[4].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
         }

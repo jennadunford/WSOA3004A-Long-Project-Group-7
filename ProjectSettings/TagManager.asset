@@ -8,11 +8,12 @@ TagManager:
   - Label
   - Bake
   - Patron
-  - cat1
-  - cat3
-  - cat4
-  - cat5
-  - cat2
+  - Served
+  - 'Adventure '
+  - Horror
+  - Fantasy
+  - Romance
+  - BookOne
   layers:
   - Default
   - TransparentFX

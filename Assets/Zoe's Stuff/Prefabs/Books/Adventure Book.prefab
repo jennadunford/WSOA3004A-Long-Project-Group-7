@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5773895416446175581}
   m_Layer: 0
   m_Name: Adventure Book
-  m_TagString: Book
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,8 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3bb7ca054938d42a5f220a9bd6ed1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryManager: {fileID: 0}
-  prefab: {fileID: 0}
   inInvent: 0
   slot1: {fileID: 0}
   slot2: {fileID: 0}

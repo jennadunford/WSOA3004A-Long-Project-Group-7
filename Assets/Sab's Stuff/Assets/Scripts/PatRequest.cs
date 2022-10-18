@@ -6,12 +6,11 @@ public class PatRequest : MonoBehaviour
 {
     //these are placeholders for categories.
 
-    public string category1 = "cat1";
-    public string category2 = "cat2";
-    public string category3 = "cat3";
-    public string category4 = "cat4";
-    public string category5 = "cat5";
-    public string category6 = "cat6";
+    public string category1 = "Adventure";
+    public string category2 = "Horror";
+    public string category3 = "Fantasy";
+    public string category4 = "Romance";
+
 
     //this will be the game object that the tag gets assigned on. 
     public GameObject patronChild;
@@ -35,37 +34,46 @@ public class PatRequest : MonoBehaviour
     //that will be used to check if the book the player puts on the patron is correct or not.
     private void Awake()
     {
-        chance = Random.Range(1, 601);
-        if (chance >1&& chance < 100)
+        chance = Random.Range(1, 40);
+        if (chance >1&& chance < 10)
         {
             patronChild.gameObject.tag = category1;
             Debug.Log(patronChild.gameObject.tag);
 
-        } else if (chance > 101 && chance < 200)
+        } else if (chance > 10 && chance < 20)
         {
             patronChild.gameObject.tag = category2;
             Debug.Log(patronChild.gameObject.tag);
 
-        } else if (chance > 201 && chance < 300)
+        } else if (chance > 21 && chance < 30)
         {
             patronChild.gameObject.tag = category3;
             Debug.Log(patronChild.gameObject.tag);
         }
-        else if (chance > 301 && chance < 400)
+        else if (chance > 31 && chance < 40)
         {
             patronChild.gameObject.tag = category4;
             Debug.Log(patronChild.gameObject.tag);
         }
-        else if (chance > 401 && chance < 500)
-        {
-            patronChild.gameObject.tag = category5;
-            Debug.Log(patronChild.gameObject.tag);
-        }
-        else if (chance > 501 && chance < 600)
-        {
-            patronChild.gameObject.tag = category6;
-            Debug.Log(patronChild.gameObject.tag);
-        }
+
 
     }
+
+    public void PatronServed()
+    {
+        this.tag = "Served";
+        this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x + 100, this.gameObject.transform.position.y + 100);
+        StartCoroutine(TestSpawnTimer());
+        
+
+        //this is used to test if the Patron Script works.
+        IEnumerator TestSpawnTimer()
+        {
+            yield return new WaitForSeconds(5f);
+            GameObject.Find("PatronSpawnPoint").GetComponent<BookPile>().AddBookToPile();
+            Destroy(this.gameObject);
+
+        }
+    }
+
 }
