@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PatRequest : MonoBehaviour
 {
     //these are placeholders for categories.
-
+    public Text textDialogue;
     public string category1 = "Adventure";
     public string category2 = "Horror";
     public string category3 = "Fantasy";
@@ -38,22 +39,26 @@ public class PatRequest : MonoBehaviour
         if (chance >1&& chance < 10)
         {
             patronChild.gameObject.tag = category1;
+            textDialogue.text = "Hi, I'd like a " + category1 + "book please";
             Debug.Log(patronChild.gameObject.tag);
 
         } else if (chance > 11 && chance < 20)
         {
             patronChild.gameObject.tag = category2;
             Debug.Log(patronChild.gameObject.tag);
+            textDialogue.text = "Hi, I'd like a " + category2 + "book please";
 
         } else if (chance > 21 && chance < 30)
         {
             patronChild.gameObject.tag = category3;
             Debug.Log(patronChild.gameObject.tag);
+            textDialogue.text = "Hi, I'd like a " + category3 + "book please";
         }
         else if (chance > 31 && chance < 40)
         {
             patronChild.gameObject.tag = category4;
             Debug.Log(patronChild.gameObject.tag);
+            textDialogue.text = "Hi, I'd like a " + category4 + "book please";
         }
 
 
