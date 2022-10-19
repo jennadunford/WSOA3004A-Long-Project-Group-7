@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5773895416446175581}
   m_Layer: 0
   m_Name: Adventure Book
-  m_TagString: Untagged
+  m_TagString: Adventure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inInvent: 0
-  slot1: {fileID: 0}
-  slot2: {fileID: 0}
-  slot3: {fileID: 0}
-  slot4: {fileID: 0}
+  slot1: {fileID: 578398863404814351, guid: 34cbd25d28d67f9449f929fc64e56761, type: 3}
+  slot2: {fileID: 2741308950382798404, guid: ba859feab9d16384aac409fbd3855c3f, type: 3}
+  slot3: {fileID: 4248766521551257253, guid: 9b52b62ac91896e4bb96f9cc7deeb7d5, type: 3}
+  slot4: {fileID: 7737702210425325245, guid: a62abdee25baba641b5dd7b13e36af98, type: 3}

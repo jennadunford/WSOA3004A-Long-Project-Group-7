@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
     float horizontal;
     float vertical;
     public float runSpeed = 10.0f;
-    bool isFacingRight = true;
+    bool isFacingRight = true;  
+    public Rigidbody2D rigidbody2d;
+    public bool isGrounded;
+    public float jumpForce;
+
+
     //public int playerHealth = 3;
-    public GameObject enemyDamText;
-
-
-
+    //public GameObject enemyDamText;
     //Player Attack 
     //float attackCoolDown;
     //public float attackCDTimer;
@@ -26,15 +28,18 @@ public class PlayerController : MonoBehaviour
 
 
     //Base weapon values
-    public float weaponRange = 0.65f;
+    //public float weaponRange = 0.65f;
     public int weaponDamage = 1;
-    public bool weaponEqipped = false;
+    //public bool weaponEqipped = false;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         //Alpha = cooldownVisaliser.GetComponent<SpriteRenderer>().color;
         // cooldownVisaliserAlpha = Alpha.a;
+        isGrounded = true;
+        jumpForce = 10;
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
 
@@ -76,6 +81,15 @@ public class PlayerController : MonoBehaviour
 
 
         //}
+
+        if (Input.GetKeyDown("space") )
+        {
+
+           // isGrounded = false;
+            transform.Translate(new Vector3(0, jumpForce, 0) * Time.deltaTime);
+
+        }
+
     }
 
 
@@ -108,8 +122,14 @@ public class PlayerController : MonoBehaviour
         //Gizmos.DrawWireSphere(weaponPos.position, weaponRange);
     }
 
-    public void ShowEnemyDamageTaken()
+    //public void ShowEnemyDamageTaken()
+    //{
+    //    Instantiate(enemyDamText, this.gameObject.transform);
+    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Instantiate(enemyDamText, this.gameObject.transform);
+        isGrounded = true;
+        Debug.Log("Hi");
     }
 }

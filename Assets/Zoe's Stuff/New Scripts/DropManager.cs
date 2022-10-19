@@ -11,7 +11,7 @@ public class DropManager : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
-            if (eventData.pointerDrag.tag == "Book")
+            if (eventData.pointerDrag.tag == "Book"|| eventData.pointerDrag.tag == "Adventure"|| eventData.pointerDrag.tag == "Horror"|| eventData.pointerDrag.tag == "Romance"|| eventData.pointerDrag.tag == "Fantasy")
             {
                 eventData.pointerDrag.transform.parent = this.gameObject.transform;
                 eventData.pointerDrag.transform.localScale = new Vector3(1, 1, 1);

@@ -35,30 +35,30 @@ public class PatRequest : MonoBehaviour
     //that will be used to check if the book the player puts on the patron is correct or not.
     private void Awake()
     {
-        chance = Random.Range(1, 40);
-        if (chance >1&& chance < 10)
+        chance = Random.Range(1, 41);
+        if (chance >=1 && chance <= 10)
         {
             patronChild.gameObject.tag = category1;
-            textDialogue.text = "Hi, I'd like a " + category1 + "book please";
+            textDialogue.text = "Hi, I'd like a Green book please";
             Debug.Log(patronChild.gameObject.tag);
 
-        } else if (chance > 11 && chance < 20)
+        } else if (chance >= 11 && chance <=20)
         {
             patronChild.gameObject.tag = category2;
             Debug.Log(patronChild.gameObject.tag);
-            textDialogue.text = "Hi, I'd like a " + category2 + "book please";
+            textDialogue.text = "Hi, I'd like a Yellow book please";
 
-        } else if (chance > 21 && chance < 30)
+        } else if (chance >= 21 && chance <= 30)
         {
             patronChild.gameObject.tag = category3;
             Debug.Log(patronChild.gameObject.tag);
-            textDialogue.text = "Hi, I'd like a " + category3 + "book please";
+            textDialogue.text = "Hi, I'd like a Blue book please";
         }
-        else if (chance > 31 && chance < 40)
+        else if (chance >= 31 && chance <= 40)
         {
             patronChild.gameObject.tag = category4;
             Debug.Log(patronChild.gameObject.tag);
-            textDialogue.text = "Hi, I'd like a " + category4 + "book please";
+            textDialogue.text = "Hi, I'd like a Red book please";
         }
 
 

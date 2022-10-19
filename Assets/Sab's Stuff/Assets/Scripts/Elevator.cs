@@ -14,7 +14,7 @@ public class Elevator : MonoBehaviour
     public GameObject player;
     public Transform parent;
     public int liftLevel=0;
-    float levelPos = 4.8728f;
+    float levelPos = 4.7467f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +28,11 @@ public class Elevator : MonoBehaviour
         if (playerOn == true)
         {
 
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.UpArrow))
             {
                 if (levelreached == true)
                 {
-                    if (liftLevel <= 1)
+                    if (liftLevel < 3)
                     {
                        
                         transform.DOMoveY(transform.position.y + levelPos, 1);
@@ -47,7 +47,7 @@ public class Elevator : MonoBehaviour
 
             }
 
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             {
 
                 if (levelreached == true)

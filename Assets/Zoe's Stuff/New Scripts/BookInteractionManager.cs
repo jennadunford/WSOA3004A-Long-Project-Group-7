@@ -49,7 +49,13 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
                 this.gameObject.transform.parent = slotsArray[i].transform;
                 this.gameObject.GetComponent<Transform>().position = slotsArray[i].GetComponent<Transform>().position;
                 inInvent = true;
+                
+
             }
+           
         }
+        
+
+
     }
 }
