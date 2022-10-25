@@ -9,9 +9,6 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
     private CanvasGroup trialCanvasGroup;
 
     [SerializeField]
-    private Canvas dragNDrop;
-
-    [SerializeField]
     private GameObject slot1;
     [SerializeField]
     private GameObject slot2;
@@ -35,8 +32,6 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
     {
         transform.position = Input.mousePosition;
         trialCanvasGroup.blocksRaycasts = false;
-        transform.parent = dragNDrop.transform;
-        this.gameObject.GetComponent<Transform>().localScale = new Vector3(0.7f, 0.7f, 0.7f);
     }
 
     public void OnEndDrag(PointerEventData eventData)
