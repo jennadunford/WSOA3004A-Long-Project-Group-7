@@ -14,7 +14,7 @@ public class Elevator : MonoBehaviour
     public GameObject player;
     public Transform parent;
     public int liftLevel=0;
-    float levelPos = 4.7467f;
+    float levelPos = 4.849f;
 
     // Start is called before the first frame update
     void Start()
