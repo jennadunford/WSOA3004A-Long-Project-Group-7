@@ -9,6 +9,9 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
     private CanvasGroup trialCanvasGroup;
 
     [SerializeField]
+    private Canvas dragCanvas;
+
+    [SerializeField]
     private GameObject slot1;
     [SerializeField]
     private GameObject slot2;
@@ -30,8 +33,11 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
     }
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
+        //transform.position = Input.mousePosition;
+        gameObject.GetComponent<RectTransform>().position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         trialCanvasGroup.blocksRaycasts = false;
+        transform.parent = dragCanvas.transform;
+        this.gameObject.GetComponent<Transform>().localScale = new Vector3(0.7f, 0.7f, 0.7f);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -52,10 +58,6 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
                 
 
             }
-           
         }
-        
-
-
     }
 }
