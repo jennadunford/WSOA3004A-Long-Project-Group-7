@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inInvent: 0
+  dragCanvas: {fileID: 3743770683975371145, guid: 4bbde27a55d6aa44d9885c7f382825a8, type: 3}
   slot1: {fileID: 578398863404814351, guid: 34cbd25d28d67f9449f929fc64e56761, type: 3}
   slot2: {fileID: 2741308950382798404, guid: ba859feab9d16384aac409fbd3855c3f, type: 3}
   slot3: {fileID: 4248766521551257253, guid: 9b52b62ac91896e4bb96f9cc7deeb7d5, type: 3}
