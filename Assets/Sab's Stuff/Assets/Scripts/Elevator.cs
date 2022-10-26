@@ -35,7 +35,7 @@ public class Elevator : MonoBehaviour
                     if (liftLevel < 3)
                     {
                        
-                        transform.DOMoveY(transform.position.y + levelPos, 0.6f);
+                        transform.DOMoveY(transform.position.y + levelPos, 1);
                         liftLevel += 1;
                         levelreached = false;
                         StartCoroutine(LiftTime());
@@ -55,7 +55,7 @@ public class Elevator : MonoBehaviour
                     if (liftLevel >= 1)
                     {
                        
-                        transform.DOMoveY(transform.position.y - levelPos, 0.6f);
+                        transform.DOMoveY(transform.position.y - levelPos, 1);
                         liftLevel -= 1;
                         levelreached = false;
                         StartCoroutine(LiftTime());
