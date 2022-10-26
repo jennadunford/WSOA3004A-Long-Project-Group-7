@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);//dont change y velocity!!
         if (horizontal > 0 && !isFacingRight)
         {
             FlipCharcter();
