@@ -67,7 +67,7 @@ public class PatRequest : MonoBehaviour
     public void PatronServed()
     {
         this.tag = "Served";
-        this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x + 100, this.gameObject.transform.position.y + 100);
+        this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x + 10, this.gameObject.transform.position.y + 10);
         StartCoroutine(TestSpawnTimer());
         
 

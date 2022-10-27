@@ -8,8 +8,17 @@ public class RemoveFromPile : MonoBehaviour
 
    public BookPile bookPile;
     public bool isUsed =false;
-    
 
+    public void Update()
+    {
+        if (this.transform.childCount > 0)
+        {
+            isUsed = true;
+        } else
+        {
+            isUsed = false;
+        }
+    }
     public void RemoveMe()
     {
         isUsed = false;

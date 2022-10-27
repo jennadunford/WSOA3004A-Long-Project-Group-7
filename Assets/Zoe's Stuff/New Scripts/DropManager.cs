@@ -17,6 +17,7 @@ public class DropManager : MonoBehaviour, IDropHandler
                 eventData.pointerDrag.transform.localScale = new Vector3(1, 1, 1);
                 eventData.pointerDrag.transform.eulerAngles = new Vector3(0, 0, 0);
                 eventData.pointerDrag.GetComponent<Transform>().position = gameObject.GetComponent<Transform>().position;
+                
                 eventData.pointerDrag.GetComponent<CanvasGroup>().blocksRaycasts = true;
 
                 if (eventData.pointerDrag.GetComponent<BookInteractionManager>().inInvent)

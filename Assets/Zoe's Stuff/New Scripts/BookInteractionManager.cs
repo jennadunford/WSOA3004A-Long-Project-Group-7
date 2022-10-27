@@ -14,6 +14,8 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
     private void Start()
     {
         trialCanvasGroup = gameObject.GetComponent<CanvasGroup>();
+
+        
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -27,5 +29,6 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
     {
         transform.localPosition = Vector3.zero;
         trialCanvasGroup.blocksRaycasts = true;
+
     }
 }

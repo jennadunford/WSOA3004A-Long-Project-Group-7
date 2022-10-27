@@ -5,52 +5,52 @@ using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public GameObject damText;
-    public int health = 0;
-    public GameObject droppedItem;
-    public GameObject player;
+    //public GameObject damText;
+    //public int health = 0;
+    //public GameObject droppedItem;
+    //public GameObject player;
 
 
-    float chance;
+    //float chance;
     
 
-    public GameObject parentOfEnemy;
+    //public GameObject parentOfEnemy;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        chance = Random.Range(1, 100);
-    }
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+    //    chance = Random.Range(1, 100);
+    //}
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (health <= 0)
-        {
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    if (health <= 0)
+    //    {
 
-            Destroy(this.gameObject);
+    //        Destroy(this.gameObject);
 
-        }
+    //    }
 
-        damText.GetComponentInChildren<TextMeshPro>().text = player.GetComponent<PlayerController>().weaponDamage.ToString();
+    //    damText.GetComponentInChildren<TextMeshPro>().text = player.GetComponent<PlayerController>().weaponDamage.ToString();
 
-    }
+    //}
     
-    public void ShowDamageTaken()
-    {
-        Instantiate(damText, this.gameObject.transform);
-    }
-    private void OnDestroy() 
-    {
-        //Instantiate(droppedItem, transform.position, transform.rotation);
-        //this.GetComponent<BookDropScript>().DropBook();
-        //parentOfEnemy.gameObject.GetComponent<BookDropScript>().DropBook();
+    //public void ShowDamageTaken()
+    //{
+    //    Instantiate(damText, this.gameObject.transform);
+    //}
+    //private void OnDestroy() 
+    //{
+    //    //Instantiate(droppedItem, transform.position, transform.rotation);
+    //    //this.GetComponent<BookDropScript>().DropBook();
+    //    //parentOfEnemy.gameObject.GetComponent<BookDropScript>().DropBook();
 
 
         
         
 
  
-    }
+    //}
 
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4637367956881128329}
   - component: {fileID: 4637367956881128328}
   - component: {fileID: -5773895416446175581}
+  - component: {fileID: -4438291770998019069}
   m_Layer: 0
   m_Name: Fantasy Book
   m_TagString: Fantasy
@@ -104,7 +105,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inInvent: 0
   dragCanvas: {fileID: 3743770683975371145, guid: 4bbde27a55d6aa44d9885c7f382825a8, type: 3}
-  slot1: {fileID: 578398863404814351, guid: 34cbd25d28d67f9449f929fc64e56761, type: 3}
-  slot2: {fileID: 2741308950382798404, guid: ba859feab9d16384aac409fbd3855c3f, type: 3}
-  slot3: {fileID: 4248766521551257253, guid: 9b52b62ac91896e4bb96f9cc7deeb7d5, type: 3}
-  slot4: {fileID: 7737702210425325245, guid: a62abdee25baba641b5dd7b13e36af98, type: 3}
+--- !u!114 &-4438291770998019069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4637367956881128326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471c3bdc4c450404d9cc13fee781adf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pile: []
+  dragCanvas: {fileID: 0}
