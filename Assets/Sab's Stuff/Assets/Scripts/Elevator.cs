@@ -39,6 +39,7 @@ public class Elevator : MonoBehaviour
                         liftLevel += 1;
                         levelreached = false;
                         StartCoroutine(LiftTime());
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = false;
                     }
                 }
 
@@ -59,6 +60,8 @@ public class Elevator : MonoBehaviour
                         liftLevel -= 1;
                         levelreached = false;
                         StartCoroutine(LiftTime());
+                        
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = false;
                     }
                 }
 
@@ -73,13 +76,9 @@ public class Elevator : MonoBehaviour
         {
             playerOn = true;
             player.transform.SetParent(parent);
+            
+        }
 
-        }
-        else
-        {
-            playerOn = false;
-           
-        }
 
       
     }
@@ -88,11 +87,13 @@ public class Elevator : MonoBehaviour
     {
         playerOn = false;
         player.transform.SetParent(null);
+     
     }
 
     IEnumerator LiftTime()
     {
         yield return new WaitForSeconds(1.1f);
         levelreached = true;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = true;
     }
 }

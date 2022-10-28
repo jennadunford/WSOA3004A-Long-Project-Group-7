@@ -16,6 +16,7 @@ TagManager:
   - Adventure
   - InvoSlot
   - cat2
+  - Clock
   layers:
   - Default
   - TransparentFX
