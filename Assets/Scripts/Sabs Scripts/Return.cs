@@ -43,6 +43,31 @@ public class Return : MonoBehaviour
             this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[5].transform;
             this.gameObject.transform.position = this.gameObject.transform.parent.position;
         }
+        else if (gameObject.GetComponentInParent<BookPile>().pile[6].GetComponent<RemoveFromPile>().isUsed == false)
+        {
+            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[6].transform;
+            this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        }
+        else if (gameObject.GetComponentInParent<BookPile>().pile[7].GetComponent<RemoveFromPile>().isUsed == false)
+        {
+            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[7].transform;
+            this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        }
+        else if (gameObject.GetComponentInParent<BookPile>().pile[8].GetComponent<RemoveFromPile>().isUsed == false)
+        {
+            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[8].transform;
+            this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        }
+        else if (gameObject.GetComponentInParent<BookPile>().pile[9].GetComponent<RemoveFromPile>().isUsed == false)
+        {
+            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[9].transform;
+            this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        }
+        else if (gameObject.GetComponentInParent<BookPile>().pile[10].GetComponent<RemoveFromPile>().isUsed == false)
+        {
+            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[10].transform;
+            this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        }
 
 
 

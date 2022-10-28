@@ -117,5 +117,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471c3bdc4c450404d9cc13fee781adf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pile: []
-  dragCanvas: {fileID: 0}

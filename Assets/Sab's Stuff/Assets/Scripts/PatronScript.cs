@@ -37,7 +37,11 @@ public class PatronScript : MonoBehaviour
     IEnumerator Interval()
     {
         yield return new WaitForSeconds(3f);
-        SpawnPatron();
+        if (GameObject.FindGameObjectWithTag("Clock").GetComponent<ClockController>().dayTime == true)
+        {
+            SpawnPatron();
+        }
+        
         StopAllCoroutines();
         
     }
