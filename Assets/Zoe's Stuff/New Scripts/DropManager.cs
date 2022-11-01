@@ -5,8 +5,6 @@ using UnityEngine.EventSystems;
 
 public class DropManager : MonoBehaviour, IDropHandler
 {
-    [SerializeField]
-    private GameObject inventoryManager;
     void IDropHandler.OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
@@ -20,10 +18,7 @@ public class DropManager : MonoBehaviour, IDropHandler
                 
                 eventData.pointerDrag.GetComponent<CanvasGroup>().blocksRaycasts = true;
 
-                if (eventData.pointerDrag.GetComponent<BookInteractionManager>().inInvent)
-                {
-                    eventData.pointerDrag.GetComponent<BookInteractionManager>().inInvent = false;
-                }
+                eventData.pointerDrag.GetComponent<BookInteractionManager>().prevParent = this.gameObject;
             }
         }
     }

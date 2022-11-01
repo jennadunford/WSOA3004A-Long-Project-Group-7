@@ -22,11 +22,6 @@ public class PatronInv : MonoBehaviour, IDropHandler
                 eventData.pointerDrag.GetComponent<CanvasGroup>().blocksRaycasts = true;
                 bookRequestCategory.GetComponentInParent<PatRequest>().PatronServed();
                 Debug.Log("Correct");
-
-                if (eventData.pointerDrag.GetComponent<BookInteractionManager>().inInvent)
-                {
-                    eventData.pointerDrag.GetComponent<BookInteractionManager>().inInvent = false;
-                }
             }
         }
     }

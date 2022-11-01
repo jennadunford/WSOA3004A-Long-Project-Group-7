@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4637367956881128330}
   - component: {fileID: 4637367956881128329}
   - component: {fileID: 4637367956881128328}
-  - component: {fileID: -5773895416446175581}
   - component: {fileID: -7760687026710764855}
+  - component: {fileID: 5061945190160230781}
   m_Layer: 0
   m_Name: Adventure Book
   m_TagString: Adventure
@@ -91,20 +91,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &-5773895416446175581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4637367956881128326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c3bb7ca054938d42a5f220a9bd6ed1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inInvent: 0
-  dragCanvas: {fileID: 3743770683975371145, guid: 4bbde27a55d6aa44d9885c7f382825a8, type: 3}
 --- !u!114 &-7760687026710764855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,5 +103,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471c3bdc4c450404d9cc13fee781adf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pile: []
-  dragCanvas: {fileID: 0}
+--- !u!114 &5061945190160230781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4637367956881128326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c3bb7ca054938d42a5f220a9bd6ed1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragCanvas: {fileID: 3743770683975371145, guid: 4bbde27a55d6aa44d9885c7f382825a8, type: 3}
