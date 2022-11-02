@@ -32,7 +32,7 @@ public class Elevator : MonoBehaviour
             {
                 if (levelreached == true)
                 {
-                    if (liftLevel < 3)
+                    if (liftLevel < 2)
                     {
                        
                         transform.DOMoveY(transform.position.y + levelPos, 1);
