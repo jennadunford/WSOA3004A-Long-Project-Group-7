@@ -74,8 +74,7 @@ public class ClockController : MonoBehaviour
     public void NewDay()
     {
         OnDayChanged?.Invoke();
-        Debug.Log("Oublished Event");
-        //set slots active
+        //Debug.Log("Oublished Event");
         popUp.SetActive(false);
         weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
         increaseDay = true;
