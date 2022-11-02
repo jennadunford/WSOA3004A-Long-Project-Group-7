@@ -21,6 +21,12 @@ public class ClockController : MonoBehaviour
     public bool dayTime = false;
     private bool increaseDay = false;
 
+    private void Start()
+    {
+        timePassed = (duration * 3) / 4;
+        increaseDay = true;
+    }
+
 
     private void Update()
     {
@@ -32,7 +38,7 @@ public class ClockController : MonoBehaviour
         {
             timePassed = 0;
         }
-        
+
         if (modifier < -90 && modifier > -180)
         {
             increaseDay = false;
@@ -48,7 +54,7 @@ public class ClockController : MonoBehaviour
         {
             dayTime = false;
         }
-        
+
         if (!dayTime)
         {
             popUp.SetActive(true);
@@ -73,6 +79,6 @@ public class ClockController : MonoBehaviour
         popUp.SetActive(false);
         weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
         increaseDay = true;
-        timePassed = duration/4 * 3;
+        timePassed = duration / 4 * 3;
     }
 }
