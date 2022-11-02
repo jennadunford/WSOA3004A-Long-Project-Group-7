@@ -5901,6 +5901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332747237}
   - component: {fileID: 332747238}
+  - component: {fileID: 332747239}
   m_Layer: 0
   m_Name: RackSlot10
   m_TagString: Untagged
@@ -5937,6 +5938,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &332747239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332747236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &362510038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8381512369127688430, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
@@ -6271,6 +6284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418074519}
   - component: {fileID: 418074520}
+  - component: {fileID: 418074521}
   m_Layer: 0
   m_Name: RackSlot4
   m_TagString: Untagged
@@ -6307,6 +6321,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &418074521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418074518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &426461768 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8698897965870127375, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
@@ -6588,6 +6614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488911003}
   - component: {fileID: 488911004}
+  - component: {fileID: 488911005}
   m_Layer: 0
   m_Name: RackSlot2
   m_TagString: Untagged
@@ -6624,6 +6651,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &488911005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488911002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491334894
 GameObject:
   m_ObjectHideFlags: 0
@@ -6696,7 +6735,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: b2b87c31f92c265429ed5a599c9af485, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7197,6 +7236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 595355757}
   - component: {fileID: 595355758}
+  - component: {fileID: 595355759}
   m_Layer: 0
   m_Name: RackSlot1
   m_TagString: Untagged
@@ -7233,6 +7273,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &595355759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595355756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &602847985
 GameObject:
   m_ObjectHideFlags: 0
@@ -11867,6 +11919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355666816}
   - component: {fileID: 1355666817}
+  - component: {fileID: 1355666818}
   m_Layer: 0
   m_Name: RackSlot5
   m_TagString: Untagged
@@ -11903,6 +11956,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &1355666818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355666815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1358835667
 GameObject:
   m_ObjectHideFlags: 0
@@ -13578,6 +13643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1607025532}
   - component: {fileID: 1607025533}
+  - component: {fileID: 1607025534}
   m_Layer: 0
   m_Name: RackSlot7
   m_TagString: Untagged
@@ -13614,6 +13680,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &1607025534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607025531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1631497186
 GameObject:
   m_ObjectHideFlags: 0
@@ -14118,6 +14196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1722446616}
   - component: {fileID: 1722446617}
+  - component: {fileID: 1722446618}
   m_Layer: 0
   m_Name: RackSlot6
   m_TagString: Untagged
@@ -14154,6 +14233,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &1722446618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722446615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741270885
 GameObject:
   m_ObjectHideFlags: 0
@@ -14299,6 +14390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747109054}
   - component: {fileID: 1747109055}
+  - component: {fileID: 1747109056}
   m_Layer: 0
   m_Name: RackSlot3
   m_TagString: Untagged
@@ -14335,6 +14427,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &1747109056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747109053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1748805049
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,6 +14449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1748805050}
   - component: {fileID: 1748805051}
+  - component: {fileID: 1748805052}
   m_Layer: 0
   m_Name: RackSlot9
   m_TagString: Untagged
@@ -14381,6 +14486,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &1748805052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748805049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1758693967
 GameObject:
   m_ObjectHideFlags: 0
@@ -16572,6 +16689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871123997}
   - component: {fileID: 1871123998}
+  - component: {fileID: 1871123999}
   m_Layer: 0
   m_Name: RackSlot8
   m_TagString: Untagged
@@ -16608,6 +16726,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookPile: {fileID: 1206276795}
   isUsed: 0
+--- !u!114 &1871123999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871123996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694ae3f19d099e047ba529750a9f7c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1902051359
 GameObject:
   m_ObjectHideFlags: 0
