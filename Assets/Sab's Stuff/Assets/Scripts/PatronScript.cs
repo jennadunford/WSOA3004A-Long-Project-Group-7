@@ -36,7 +36,7 @@ public class PatronScript : MonoBehaviour
         //if there is no patron in the scene a countdown will start.
     IEnumerator Interval()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.5f);
         if (GameObject.FindGameObjectWithTag("Clock").GetComponent<ClockController>().dayTime == true)
         {
             SpawnPatron();
