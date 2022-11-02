@@ -7,6 +7,7 @@ public class PatronScript : MonoBehaviour
     public GameObject patron;
     public Transform spawnHere;
     string Patron= "Patron";
+    public int patronsServed=0;
 
     // Start is called before the first frame update
     void Start()

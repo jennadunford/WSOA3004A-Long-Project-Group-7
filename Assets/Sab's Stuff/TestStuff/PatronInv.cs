@@ -25,8 +25,9 @@ public class PatronInv : MonoBehaviour, IDropHandler
                 bookRequestCategory.GetComponentInParent<PatRequest>().PatronServed();
                 Debug.Log("Correct");
                 GameObject.Find("PatronSpawnPoint").GetComponent<BookPile>().AddBookToPile();
-                
-                
+                GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed ++;
+
+
             }
         }
 
