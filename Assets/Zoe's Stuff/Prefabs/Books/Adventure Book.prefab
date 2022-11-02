@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4637367956881128328}
   - component: {fileID: -7760687026710764855}
   - component: {fileID: 5061945190160230781}
+  - component: {fileID: 9047980192535236863}
   m_Layer: 0
   m_Name: Adventure Book
   m_TagString: Adventure
@@ -116,3 +117,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragCanvas: {fileID: 3743770683975371145, guid: 4bbde27a55d6aa44d9885c7f382825a8, type: 3}
+--- !u!114 &9047980192535236863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4637367956881128326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd30d4711a2ac4845aeea247182da058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -24,7 +24,7 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
         gameObject.GetComponent<RectTransform>().position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         trialCanvasGroup.blocksRaycasts = false;
         transform.parent = dragCanvas.transform;
-        this.gameObject.GetComponent<Transform>().localScale = new Vector3(1f, 1, 1f);
+        //this.gameObject.GetComponent<Transform>().localScale = new Vector3(1f, 1, 1f);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -32,6 +32,6 @@ public class BookInteractionManager : MonoBehaviour, IDragHandler, IEndDragHandl
         transform.localPosition = Vector3.zero;
         trialCanvasGroup.blocksRaycasts = true;
         transform.parent = prevParent.transform;
-        transform.localScale = new Vector3(1, 1, 1);
+        //transform.localScale = new Vector3(1, 1, 1);
     }
 }
