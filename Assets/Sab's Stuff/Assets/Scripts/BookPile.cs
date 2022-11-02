@@ -14,7 +14,15 @@ public class BookPile : MonoBehaviour
     public GameObject romanceBook;
 
     public GameObject parentobject;
+    private void OnEnable()
+    {
+        //ClockController.OnDayChanged += AddBookToPile;
 
+    }
+    private void OnDisable()
+    {
+        //ClockController.OnDayChanged -= AddBookToPile;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -210,6 +218,48 @@ public class BookPile : MonoBehaviour
                 pile[4].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
             }
         }
+
+        //for (int i = 0; i < pile.Length; i++)
+        //{
+
+        //    if (pile[i].gameObject.GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        Debug.Log("Patron Tag Is " + (GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>()));
+        //        if (GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag == "Adventure")
+        //        {
+        //            GameObject.FindGameObjectWithTag("InvoSlot").GetComponentInChildren<Return>().ReturnMe();
+
+        //            //adventureBook.tag = GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag;
+
+        //            pile[i].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
+
+        //        }
+        //        else if (GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag == "Horror")
+        //        {
+        //            GameObject.FindGameObjectWithTag("InvoSlot").GetComponentInChildren<Return>().ReturnMe();
+
+        //            horrorBook.tag = GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag;
+
+        //            pile[i].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
+        //        }
+        //        else if (GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag == "Fantasy")
+        //        {
+        //            GameObject.FindGameObjectWithTag("InvoSlot").GetComponentInChildren<Return>().ReturnMe();
+
+        //            fantasyBook.tag = GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag;
+
+        //            pile[i].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
+        //        }
+        //        else if (GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag == "Romance")
+        //        {
+        //            GameObject.FindGameObjectWithTag("InvoSlot").GetComponentInChildren<Return>().ReturnMe();
+
+        //            romanceBook.tag = GameObject.FindGameObjectWithTag("Served").GetComponent<PatRequest>().patronChild.tag;
+
+        //            pile[i].gameObject.GetComponent<RemoveFromPile>().isUsed = true;
+        //        }
+        //    }
+        //}
     }
 }
 

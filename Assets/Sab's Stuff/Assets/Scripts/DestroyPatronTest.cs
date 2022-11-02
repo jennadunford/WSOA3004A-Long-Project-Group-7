@@ -28,8 +28,6 @@ public class DestroyPatronTest : MonoBehaviour
     IEnumerator TestSpawnTimer()
     {
         yield return new WaitForSeconds(5f);
-
-  
         GameObject.Find("PatronSpawnPoint").GetComponent<BookPile>().AddBookToPile();
         Destroy(this.gameObject);
 

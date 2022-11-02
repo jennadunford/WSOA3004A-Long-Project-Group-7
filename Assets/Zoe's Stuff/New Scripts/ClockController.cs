@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ClockController : MonoBehaviour
 {
+    public delegate void DayChange();
+    public static event DayChange OnDayChanged;
     [SerializeField]
     private float duration = 360;
 
@@ -65,6 +67,9 @@ public class ClockController : MonoBehaviour
 
     public void NewDay()
     {
+        OnDayChanged?.Invoke();
+        Debug.Log("Oublished Event");
+        //set slots active
         popUp.SetActive(false);
         weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
         increaseDay = true;

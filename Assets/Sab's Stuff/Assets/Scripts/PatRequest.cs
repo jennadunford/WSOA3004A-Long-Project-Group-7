@@ -12,6 +12,7 @@ public class PatRequest : MonoBehaviour
     public string category3 = "Fantasy";
     public string category4 = "Romance";
 
+    public bool served = false;
 
     //this will be the game object that the tag gets assigned on. 
     public GameObject patronChild;
@@ -67,16 +68,18 @@ public class PatRequest : MonoBehaviour
     public void PatronServed()
     {
         this.tag = "Served";
+        served = true;
         this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x + 10, this.gameObject.transform.position.y + 10);
         StartCoroutine(TestSpawnTimer());
-        
+        Debug.Log("Event Rec");
 
         //this is used to test if the Patron Script works.
         IEnumerator TestSpawnTimer()
         {
             yield return new WaitForSeconds(5f);
-            GameObject.Find("PatronSpawnPoint").GetComponent<BookPile>().AddBookToPile();
-            Destroy(this.gameObject);
+           
+            //GameObject.Find("PatronSpawnPoint").GetComponent<BookPile>().AddBookToPile();
+            //Destroy(this.gameObject);
 
         }
     }

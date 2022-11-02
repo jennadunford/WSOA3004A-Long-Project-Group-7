@@ -50,6 +50,11 @@ public class PatronScript : MonoBehaviour
         //This will spawn a patron after the ccountdown is finished.
     public void SpawnPatron()
     {
+        PatRequest[] patrons = FindObjectsOfType(typeof(PatRequest)) as PatRequest[] ;
+        foreach(PatRequest pat in patrons)
+        {
+            Destroy(pat.gameObject);
+        }
         Instantiate(patron, spawnHere);
     }
 }
