@@ -259,26 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018fe3c79fb5ee448857556ad83e8252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventField: {fileID: 4179765}
-  intakeBook: {fileID: 0}
-  inventFull: 0
-  slot1: {fileID: 693936665}
-  slot2: {fileID: 0}
-  slot3: {fileID: 0}
-  slot4: {fileID: 0}
-  emptyArray: 
-  booksArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  slotsArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  inventContent: 0
 --- !u!114 &4179768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4524,43 +4504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff84e99d21380c4bae30fc430e16ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallBubble: {fileID: 694336715}
-  medBubble: {fileID: 1902051359}
-  largeBubble: {fileID: 0}
-  redIcon: {fileID: 21300000, guid: cf8ead95275b77843918bbd3cefdd5be, type: 3}
-  greenIcon: {fileID: 21300000, guid: f51d13beb96c57844b4c805e5d563858, type: 3}
-  yellowIcon: {fileID: 21300000, guid: d102a6c2b1b4f444c9aaf7b90fec5600, type: 3}
-  blueIcon: {fileID: 21300000, guid: 127f34e3398039e4689652dbeba3b033, type: 3}
-  smallIMG: {fileID: 0}
-  medIMG1: {fileID: 0}
-  medIMG2: {fileID: 0}
-  largeIMG1: {fileID: 0}
-  largeIMG2: {fileID: 0}
-  largeIMG3: {fileID: 0}
-  amountSmall: {fileID: 1540341737}
-  amountMed1: {fileID: 2029093972}
-  amountMed2: {fileID: 1571599661}
-  amountLarge1: {fileID: 0}
-  amountLarge2: {fileID: 0}
-  amountLarge3: {fileID: 0}
-  numBooks: 0
-  diffGenres: 0
-  bubbles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  bookIcons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  amountText:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &195879255
 GameObject:
   m_ObjectHideFlags: 0
@@ -13435,10 +13378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51948bbd1ad0b0f4090d3989572449cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  libraryUI: {fileID: 1361103181}
-  dungeonUI: {fileID: 0}
-  library: {fileID: 0}
-  dungeon: {fileID: 0}
 --- !u!114 &1631497192
 MonoBehaviour:
   m_ObjectHideFlags: 0
