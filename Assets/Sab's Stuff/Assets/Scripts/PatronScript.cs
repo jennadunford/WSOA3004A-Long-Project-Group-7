@@ -9,6 +9,10 @@ public class PatronScript : MonoBehaviour
     string Patron= "Patron";
     public int patronsServed=0;
 
+
+    public int daysPassed;
+    public int daysFailed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +22,10 @@ public class PatronScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (daysFailed > 2)
+        {
+            //player has failed do something
+        }
     }
 
     private void FixedUpdate()

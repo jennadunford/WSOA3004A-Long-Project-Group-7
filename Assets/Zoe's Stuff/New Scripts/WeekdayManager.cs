@@ -9,7 +9,10 @@ public class WeekdayManager : MonoBehaviour
     private TMP_Text displayTxt;
 
     public int dayNum = 0;
-    
+
+
+
+    public int[] dayOfWeek = new int [7];
     private string[] weekDays = new string[7];
 
     private string one = "Mon";
@@ -37,5 +40,7 @@ public class WeekdayManager : MonoBehaviour
     void Update()
     {
         displayTxt.text = weekDays[dayNum];
+
+        
     }
 }
