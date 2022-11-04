@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuManagement : MonoBehaviour
 {
+    private void Awake()
+    {
+        Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+    }
+
     public void LoadGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
