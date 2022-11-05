@@ -13,7 +13,7 @@ public class PatronInv : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
-            if (bookRequestCategory.tag.Contains(eventData.pointerDrag.tag.ToString()))
+            if (eventData.pointerDrag.tag==bookRequestCategory.tag)
             {
                 eventData.pointerDrag.transform.parent = this.gameObject.transform;
                 eventData.pointerDrag.transform.localScale = new Vector3(1, 1, 1);
