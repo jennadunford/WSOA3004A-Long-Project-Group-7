@@ -13,21 +13,29 @@ public class PatRequest : MonoBehaviour
     public string category4 = "Romance";
 
     public string category5 = "Adventure Horror";
+    
+
     public string category6 = "Adventure Fantasy";
+  
+
     public string category7 = "Adventure Romance";
+   
 
     public string category8 = "Horror Fantasy";
-    public string category9 = "Horror Adventure";
+   
+
     public string category10 = "Horror Romance";
+    
 
-    public string category11 = "Fantasy Adventure";
-    public string category12 = "Fantasy Horror";
+
     public string category13 = "Fantasy Romance";
+  
 
 
-    public string category14 = "Romance Adventure";
-    public string category15 = "Romance Horror";
-    public string category16 = "Romance Fantasy";
+
+
+
+
 
 
     public bool served = false;
@@ -106,7 +114,7 @@ public class PatRequest : MonoBehaviour
         }
         else if (chance >= 81 && chance <= 90)
         {
-            patronChild.gameObject.tag = category9;
+            patronChild.gameObject.tag = category5;
             Debug.Log(patronChild.gameObject.tag);
             textDialogue.text = "Hi, I'd like a Yellow and Blue book please";
         }
@@ -118,13 +126,13 @@ public class PatRequest : MonoBehaviour
         }
         else if (chance >= 101 && chance <= 110)
         {
-            patronChild.gameObject.tag = category11;
+            patronChild.gameObject.tag = category6;
             Debug.Log(patronChild.gameObject.tag);
             textDialogue.text = "Hi, I'd like a Blue and Green book please";
         }
         else if (chance >= 111 && chance <= 120)
         {
-            patronChild.gameObject.tag = category12;
+            patronChild.gameObject.tag = category8;
             Debug.Log(patronChild.gameObject.tag);
             textDialogue.text = "Hi, I'd like a Blue and Yellow book please";
         }
@@ -136,19 +144,19 @@ public class PatRequest : MonoBehaviour
         }
         else if (chance >= 131 && chance <= 140)
         {
-            patronChild.gameObject.tag = category14;
+            patronChild.gameObject.tag = category7;
             Debug.Log(patronChild.gameObject.tag);
             textDialogue.text = "Hi, I'd like a Red and Green book please";
         }
         else if (chance >= 141 && chance <= 150)
         {
-            patronChild.gameObject.tag = category15;
+            patronChild.gameObject.tag = category10;
             Debug.Log(patronChild.gameObject.tag);
             textDialogue.text = "Hi, I'd like a Red and Yellow book please";
         }
         else if (chance >= 151 && chance <= 160)
         {
-            patronChild.gameObject.tag = category16;
+            patronChild.gameObject.tag = category13;
             Debug.Log(patronChild.gameObject.tag);
             textDialogue.text = "Hi, I'd like a Red and Blue book please";
         }

@@ -16,19 +16,12 @@ TagManager:
   - Adventure
   - InvoSlot
   - Clock
-  - Action Romance
   - Adventure Horror
   - Adventure Fantasy
   - Adventure Romance
   - Horror Fantasy
-  - Horror Adventure
   - Horror Romance
-  - Fantasy Adventure
-  - Fantasy Horror
   - Fantasy Romance
-  - Romance Adventure
-  - Romance Horror
-  - Romance Fantasy
   layers:
   - Default
   - TransparentFX
