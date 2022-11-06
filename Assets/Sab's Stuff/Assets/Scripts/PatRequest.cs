@@ -110,13 +110,13 @@ public class PatRequest : MonoBehaviour
         {
             patronChild.gameObject.tag = category8;
             Debug.Log(patronChild.gameObject.tag);
-            textDialogue.text = "Hi, I'd like a Yellow and Green book please";
+            textDialogue.text = "Hi, I'd like a Yellow and Blue book please";
         }
         else if (chance >= 81 && chance <= 90)
         {
             patronChild.gameObject.tag = category5;
             Debug.Log(patronChild.gameObject.tag);
-            textDialogue.text = "Hi, I'd like a Yellow and Blue book please";
+            textDialogue.text = "Hi, I'd like a Yellow and Green book please";
         }
         else if (chance >= 91 && chance <= 100)
         {

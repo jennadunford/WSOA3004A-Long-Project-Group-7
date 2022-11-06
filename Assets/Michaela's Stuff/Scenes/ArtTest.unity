@@ -8564,7 +8564,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005957663, y: -0.34762207}
+  m_Offset: {x: -0.04895705, y: -0.34762207}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8575,7 +8575,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6796722, y: 0.4231215}
+  m_Size: {x: 1.5966512, y: 0.4231215}
   m_EdgeRadius: 0
 --- !u!1 &646846833
 GameObject:
@@ -8813,23 +8813,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b3d614f94b2034eb93391964f44bb0, type: 3}
---- !u!1 &662928072 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2357111882299740180, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
-  m_PrefabInstance: {fileID: 375957627995563544}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &662928079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662928072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd30d4711a2ac4845aeea247182da058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &670058947
 GameObject:
   m_ObjectHideFlags: 0
@@ -15020,23 +15003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd30d4711a2ac4845aeea247182da058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1208811639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7939045611726626505, guid: 9e3b8c5809c2d1947b83740a2c9a41fc, type: 3}
-  m_PrefabInstance: {fileID: 6540956843266530692}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1208811646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208811639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd30d4711a2ac4845aeea247182da058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1221723797
 GameObject:
   m_ObjectHideFlags: 0
@@ -17931,23 +17897,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402337994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd30d4711a2ac4845aeea247182da058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1402933322 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4210294204367880100, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
-  m_PrefabInstance: {fileID: 375957627995563544}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1402933329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402933322}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd30d4711a2ac4845aeea247182da058, type: 3}
@@ -28977,23 +28926,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120839072}
   m_CullTransparentMesh: 1
---- !u!1 &2121677118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881429966475758350, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
-  m_PrefabInstance: {fileID: 3643970332558578255}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2121677125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121677118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd30d4711a2ac4845aeea247182da058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2132374008 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2446171312254977810, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
@@ -29755,7 +29687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1416293924561243229, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
       propertyPath: m_TagString
-      value: Adventure Romance
+      value: Horror Fantasy
       objectReference: {fileID: 0}
     - target: {fileID: 1549078786445680510, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -30303,7 +30235,7 @@ PrefabInstance:
       objectReference: {fileID: 134253850}
     - target: {fileID: 4614711250390152356, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
       propertyPath: m_TagString
-      value: Adventure Romance
+      value: Horror Fantasy
       objectReference: {fileID: 0}
     - target: {fileID: 4637547903096308336, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -30411,7 +30343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5426620123550064511, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
       propertyPath: m_TagString
-      value: Adventure Romance
+      value: Horror Fantasy
       objectReference: {fileID: 0}
     - target: {fileID: 5499836167085989891, guid: 29186f8b4de04dc4eade70960838d9b6, type: 3}
       propertyPath: dragCanvas
@@ -31052,6 +30984,22 @@ PrefabInstance:
       propertyPath: dragCanvas
       value: 
       objectReference: {fileID: 134253850}
+    - target: {fileID: 713087692698418459, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 713087692698418459, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 713087692698418459, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 713087692698418459, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 743531903672546581, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -31106,7 +31054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1201284073084525857, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
       propertyPath: m_TagString
-      value: Adventure Fantasy
+      value: Horror Romance
       objectReference: {fileID: 0}
     - target: {fileID: 1208694073044178659, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
       propertyPath: dragCanvas
@@ -31866,7 +31814,7 @@ PrefabInstance:
       objectReference: {fileID: 134253850}
     - target: {fileID: 6959825722598496709, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
       propertyPath: m_TagString
-      value: Adventure Fantasy
+      value: Horror Romance
       objectReference: {fileID: 0}
     - target: {fileID: 6967546889024955425, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -31938,7 +31886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7470232827490355217, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
       propertyPath: m_TagString
-      value: Adventure Fantasy
+      value: Horror Romance
       objectReference: {fileID: 0}
     - target: {fileID: 7547948008935713161, guid: edb4db829b96f1c46ab1a7472eba81bc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -32919,6 +32867,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4433762975909556596, guid: 9e3b8c5809c2d1947b83740a2c9a41fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433762975909556596, guid: 9e3b8c5809c2d1947b83740a2c9a41fc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433762975909556596, guid: 9e3b8c5809c2d1947b83740a2c9a41fc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433762975909556596, guid: 9e3b8c5809c2d1947b83740a2c9a41fc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4443316853084729272, guid: 9e3b8c5809c2d1947b83740a2c9a41fc, type: 3}
       propertyPath: m_TagString
       value: Adventure
@@ -33846,7 +33810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1743215806968901071, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_TagString
-      value: Romance Horror
+      value: Horror Romance
       objectReference: {fileID: 0}
     - target: {fileID: 1798682485593813331, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_Name
@@ -33998,7 +33962,7 @@ PrefabInstance:
       objectReference: {fileID: 134253850}
     - target: {fileID: 3179129106110958461, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_TagString
-      value: Romance Horror
+      value: Horror Romance
       objectReference: {fileID: 0}
     - target: {fileID: 3180459841730488171, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_AnchorMax.y
@@ -34244,9 +34208,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4954032151812436055, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954032151812436055, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954032151812436055, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954032151812436055, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5125746412402049472, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_TagString
-      value: Romance Fantasy
+      value: Fantasy Romance
       objectReference: {fileID: 0}
     - target: {fileID: 5143436220705648387, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: dragCanvas
@@ -34306,7 +34286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5773404492039147530, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_TagString
-      value: Adventure Fantasy
+      value: Horror Romance
       objectReference: {fileID: 0}
     - target: {fileID: 5798361991320765591, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_TagString
@@ -34330,7 +34310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5959095151551079130, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_TagString
-      value: Romance Fantasy
+      value: Fantasy Romance
       objectReference: {fileID: 0}
     - target: {fileID: 5978225365964414820, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_AnchorMax.y
@@ -34434,7 +34414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6609574204916981495, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_TagString
-      value: Romance Fantasy
+      value: Fantasy Romance
       objectReference: {fileID: 0}
     - target: {fileID: 6657029143879511848, guid: 22cd23ab7661f5644951ea8268468024, type: 3}
       propertyPath: m_AnchorMax.y
