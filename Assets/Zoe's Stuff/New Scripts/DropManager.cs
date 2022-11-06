@@ -9,7 +9,7 @@ public class DropManager : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null && transform.childCount == 0)
         {
-            if (this.gameObject.transform.parent.tag.Contains(eventData.pointerDrag.tag.ToString()))
+            if (eventData.pointerDrag.tag.Contains(this.gameObject.transform.parent.tag))
             {
                 Debug.Log(this.gameObject.transform.parent.tag);
                 eventData.pointerDrag.transform.parent = this.gameObject.transform;
