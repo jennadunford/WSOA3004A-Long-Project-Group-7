@@ -5,6 +5,11 @@ using UnityEngine;
 public class PatronScript : MonoBehaviour
 {
     public GameObject patron;
+    public GameObject patron1;
+    public GameObject patron2;
+    public GameObject patron3;
+    public GameObject patron4;
+    public GameObject patron5;
     public Transform spawnHere;
     string Patron= "Patron";
     public int patronsServed=0;
@@ -12,11 +17,11 @@ public class PatronScript : MonoBehaviour
 
     public int daysPassed;
     public int daysFailed;
+    int patronType;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-
+      
     }
 
     // Update is called once per frame
@@ -63,6 +68,24 @@ public class PatronScript : MonoBehaviour
         {
             Destroy(pat.gameObject);
         }
-        Instantiate(patron, spawnHere);
+        patronType = Random.Range(1, 5);
+        if (patronType == 1)
+        {
+            Instantiate(patron1, spawnHere);
+        }
+        else if (patronType == 2)
+        {
+            Instantiate(patron2, spawnHere);
+        }
+        else if (patronType == 3)
+        {
+            Instantiate(patron3, spawnHere);
+        }
+        else if (patronType == 4)
+        {
+            Instantiate(patron4, spawnHere);
+        }
+
+       // Instantiate(patron, spawnHere);
     }
 }
