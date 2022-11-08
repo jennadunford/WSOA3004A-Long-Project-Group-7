@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3836745775792086751}
   m_Layer: 0
   m_Name: Romance Book
-  m_TagString: Horror Romance
+  m_TagString: Adventure Horror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
