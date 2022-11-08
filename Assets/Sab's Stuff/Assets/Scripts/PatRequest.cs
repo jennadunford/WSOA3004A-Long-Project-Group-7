@@ -206,7 +206,7 @@ public class PatRequest : MonoBehaviour
     {
         this.tag = "Served";
         served = true;
-        this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x + 10, this.gameObject.transform.position.y + 10);
+        this.gameObject.transform.position = new Vector2(this.gameObject.transform.position.x + 100, this.gameObject.transform.position.y + 100);
         StartCoroutine(TestSpawnTimer());
         Debug.Log("Event Rec");
 
