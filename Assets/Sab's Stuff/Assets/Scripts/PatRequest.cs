@@ -64,7 +64,7 @@ public class PatRequest : MonoBehaviour
     {
 
         //Day 1 and 2 will only have single colour books
-        if(GameObject.Find("Weekday Display Manager").GetComponent<WeekdayManager>().dayNum ==0)
+        if(GameObject.Find("Weekday Display Manager").GetComponent<WeekdayManager>().dayNum <=2)
         {
             chance = Random.Range(1, 41);
             if (chance >= 1 && chance <= 10)
@@ -95,7 +95,7 @@ public class PatRequest : MonoBehaviour
             }
         } 
         //day 3 onwards will have all colour books
-        else if (GameObject.Find("Weekday Display Manager").GetComponent<WeekdayManager>().dayNum >= 1)
+        else if (GameObject.Find("Weekday Display Manager").GetComponent<WeekdayManager>().dayNum >= 3)
         {
             chance = Random.Range(1, 161);
             if (chance >= 1 && chance <= 10)
