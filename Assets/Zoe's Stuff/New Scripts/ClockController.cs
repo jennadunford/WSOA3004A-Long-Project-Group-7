@@ -21,7 +21,8 @@ public class ClockController : MonoBehaviour
     private float timePassed = 0;
     private float speed = 2.5f;
     public float modifier;
-    public bool dayTime = false;
+
+    public bool dayTime;
     private bool increaseDay = false;
 
     private void Start()

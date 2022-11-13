@@ -40,7 +40,5 @@ public class WeekdayManager : MonoBehaviour
     void Update()
     {
         displayTxt.text = weekDays[dayNum];
-
-        
     }
 }
