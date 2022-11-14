@@ -64,6 +64,10 @@ public class ClockController : MonoBehaviour
         if (!dayTime)
         {
             popUp.SetActive(true);
+            if (GameObject.FindGameObjectWithTag("Patron") != null)
+            {
+                Destroy(GameObject.FindGameObjectWithTag("Patron"));
+            }
         }
         else
         {
