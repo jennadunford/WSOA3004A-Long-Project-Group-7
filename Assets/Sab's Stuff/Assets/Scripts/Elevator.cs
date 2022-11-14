@@ -16,10 +16,17 @@ public class Elevator : MonoBehaviour
     public int liftLevel=0;
     float levelPos = 4.849f;
 
+    public GameObject leftcol;
+    public GameObject rightcol;
+
+
     // Start is called before the first frame update
     void Start()
     {
         parent = this.gameObject.transform;
+
+        leftcol.SetActive(false);
+        rightcol.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,6 +37,8 @@ public class Elevator : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.W)|| Input.GetKeyDown(KeyCode.UpArrow))
             {
+                leftcol.SetActive(true);
+                rightcol.SetActive(true);
                 if (levelreached == true)
                 {
                     if (liftLevel < 2)
@@ -50,6 +59,8 @@ public class Elevator : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             {
+                leftcol.SetActive(true);
+                rightcol.SetActive(true);
 
                 if (levelreached == true)
                 {
@@ -95,5 +106,7 @@ public class Elevator : MonoBehaviour
         yield return new WaitForSeconds(1.1f);
         levelreached = true;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = true;
+        leftcol.SetActive(false);
+        rightcol.SetActive(false);
     }
 }
