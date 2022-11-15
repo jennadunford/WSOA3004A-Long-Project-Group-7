@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class PatronInv : MonoBehaviour, IDropHandler
 {
-    [SerializeField]
-    private GameObject inventoryManager;
+
     [SerializeField]
     GameObject bookRequestCategory;
     void IDropHandler.OnDrop(PointerEventData eventData)

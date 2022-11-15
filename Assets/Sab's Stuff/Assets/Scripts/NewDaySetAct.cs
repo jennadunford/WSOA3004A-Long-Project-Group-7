@@ -18,7 +18,7 @@ public class NewDaySetAct : MonoBehaviour
 
     public void MakeActive()
     {
-        Debug.Log("1");
+        //Debug.Log("1");
 
         GameObject ghild =  null;
 
@@ -27,7 +27,7 @@ public class NewDaySetAct : MonoBehaviour
             ghild = this.transform.GetComponentInChildren<Return>(true).gameObject;
         }
 
-        Debug.Log("2");
+      //  Debug.Log("2");
 
         if (ghild != null)
         {
