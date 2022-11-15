@@ -78,6 +78,7 @@ public class ClockController : MonoBehaviour
         {
             weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
             increaseDay = true;
+            OnDayChanged?.Invoke();
         }
     }
 
