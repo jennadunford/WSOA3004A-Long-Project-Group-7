@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PassOrFailTracker : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class PassOrFailTracker : MonoBehaviour
     private Sprite passIMG;
     [SerializeField]
     private Sprite failIMG;
+
+    [SerializeField]
+    private TMP_Text patronsServed;
+
 
     [SerializeField]
     private Image mon;
@@ -56,6 +61,8 @@ public class PassOrFailTracker : MonoBehaviour
 
     private void Update()
     {
+        patronsServed.text = patronScript.GetComponent<PatronScript>().patronsServed.ToString();
+        
         if (!clock.GetComponent<ClockController>().dayTime && !appeared)
         {
             Calculations();
