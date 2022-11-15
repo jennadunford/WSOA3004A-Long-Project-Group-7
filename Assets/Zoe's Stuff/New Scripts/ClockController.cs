@@ -7,8 +7,7 @@ public class ClockController : MonoBehaviour
 {
     public delegate void DayChange();
     public static event DayChange OnDayChanged;
-    [SerializeField]
-    private float duration = 360;
+    public float duration = 360;
 
     public Text dailyGoal;
 
@@ -17,6 +16,9 @@ public class ClockController : MonoBehaviour
 
     [SerializeField]
     private GameObject weekdayDisplay;
+
+    [SerializeField]
+    private GameObject background;
 
     private float timePassed = 0;
     private float speed = 2.5f;
