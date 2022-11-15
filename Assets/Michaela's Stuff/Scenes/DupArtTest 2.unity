@@ -25693,7 +25693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.9, y: 10.121}
+  m_AnchoredPosition: {x: -12.7, y: 6.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630822417
@@ -25716,7 +25716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Goal:'
+  m_text: 'Aim:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2830cfc1dc036d444b3773dd4a8aaecd, type: 2}
   m_sharedMaterial: {fileID: -4444351687709153790, guid: 2830cfc1dc036d444b3773dd4a8aaecd, type: 2}
@@ -25743,8 +25743,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
