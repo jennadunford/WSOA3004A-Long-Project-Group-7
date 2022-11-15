@@ -106,7 +106,7 @@ public class PatRequest : MonoBehaviour
             }
         } 
         //day 3 onwards will have all colour books
-        else if (GameObject.Find("Weekday Display Manager").GetComponent<WeekdayManager>().dayNum >= 3)
+        else if (GameObject.Find("Weekday Display Manager").GetComponent<WeekdayManager>().dayNum >2)
         {
             chance = Random.Range(1, 161);
             if (chance >= 1 && chance <= 10)
