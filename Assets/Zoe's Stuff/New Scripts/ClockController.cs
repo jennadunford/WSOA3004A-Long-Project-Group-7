@@ -24,6 +24,8 @@ public class ClockController : MonoBehaviour
     private float speed = 2.5f;
     public float modifier;
 
+    public AudioSource morning;
+
     public bool dayTime;
     private bool increaseDay = false;
 
@@ -82,6 +84,7 @@ public class ClockController : MonoBehaviour
             increaseDay = true;
             //OnDayChanged?.Invoke();
             NewDay();
+            morning.Play();
  
         }
     }

@@ -69,6 +69,7 @@ public class PatRequest : MonoBehaviour
     //that will be used to check if the book the player puts on the patron is correct or not.
     private void Awake()
     {
+        this.gameObject.GetComponent<AudioSource>().Play();
 
         //Day 1 and 2 will only have single colour books
         if(GameObject.Find("Weekday Display Manager").GetComponent<WeekdayManager>().dayNum <=2)
