@@ -6,7 +6,7 @@ using UnityEngine;
 public class PatRequest : MonoBehaviour
 {
     //these are placeholders for categories.
-    public Text textDialogue;
+   // public Text textDialogue;
     public string category1 = "Adventure";
     public string category2 = "Horror";
     public string category3 = "Fantasy";
@@ -14,19 +14,13 @@ public class PatRequest : MonoBehaviour
 
     public string category5 = "Adventure Horror";
     
-
     public string category6 = "Adventure Fantasy";
   
-
     public string category7 = "Adventure Romance";
    
-
     public string category8 = "Horror Fantasy";
-   
 
     public string category10 = "Horror Romance";
-    
-
 
     public string category13 = "Fantasy Romance";
 
@@ -34,6 +28,14 @@ public class PatRequest : MonoBehaviour
     public GameObject greenBook;
     public GameObject redBook;
     public GameObject yellowBook;
+
+    public GameObject GreenYellowBook;
+    public GameObject GreenBlueBook;
+    public GameObject GreenRedBook;
+    public GameObject YellowBlueBook;
+    public GameObject YellowRedBook;
+    public GameObject BlueRedBook;
+
   
 
 
@@ -84,7 +86,7 @@ public class PatRequest : MonoBehaviour
             {
                 patronChild.gameObject.tag = category2;
                 Debug.Log(patronChild.gameObject.tag);
-               // textDialogue.text = "Hi, I'd like a Yellow book please";
+                //textDialogue.text = "Hi, I'd like a Yellow book please";
                 yellowBook.SetActive(true);
 
             }
@@ -141,73 +143,85 @@ public class PatRequest : MonoBehaviour
             {
                 patronChild.gameObject.tag = category5;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Green and Yellow  book please";
+                //textDialogue.text = "Hi, I'd like a Green and Yellow  book please";
+                GreenYellowBook.SetActive(true);
             }
             else if (chance >= 51 && chance <= 60)
             {
                 patronChild.gameObject.tag = category6;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Green and Blue book please";
+                //textDialogue.text = "Hi, I'd like a Green and Blue book please";
+                GreenBlueBook.SetActive(true);
             }
             else if (chance >= 61 && chance <= 70)
             {
                 patronChild.gameObject.tag = category7;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Green and Red book please";
+                //textDialogue.text = "Hi, I'd like a Green and Red book please";
+                GreenRedBook.SetActive(true);
             }
             else if (chance >= 71 && chance <= 80)
             {
                 patronChild.gameObject.tag = category8;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Yellow and Blue book please";
+                //textDialogue.text = "Hi, I'd like a Yellow and Blue book please";
+                YellowBlueBook.SetActive(true);
             }
             else if (chance >= 81 && chance <= 90)
             {
                 patronChild.gameObject.tag = category5;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Yellow and Green book please";
+                //textDialogue.text = "Hi, I'd like a Yellow and Green book please";
+                GreenYellowBook.SetActive(true);
             }
             else if (chance >= 91 && chance <= 100)
             {
                 patronChild.gameObject.tag = category10;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Yellow and Red book please";
+               //textDialogue.text = "Hi, I'd like a Yellow and Red book please";
+                YellowRedBook.SetActive(true);
             }
             else if (chance >= 101 && chance <= 110)
             {
                 patronChild.gameObject.tag = category6;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Blue and Green book please";
+                //textDialogue.text = "Hi, I'd like a Blue and Green book please";
+                GreenBlueBook.SetActive(true);
             }
             else if (chance >= 111 && chance <= 120)
             {
                 patronChild.gameObject.tag = category8;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Blue and Yellow book please";
+                //textDialogue.text = "Hi, I'd like a Blue and Yellow book please";
+                YellowBlueBook.SetActive(true);
             }
             else if (chance >= 121 && chance <= 130)
             {
                 patronChild.gameObject.tag = category13;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Blue and Red book please";
+                //textDialogue.text = "Hi, I'd like a Blue and Red book please";
+                BlueRedBook.SetActive(true);
             }
             else if (chance >= 131 && chance <= 140)
             {
                 patronChild.gameObject.tag = category7;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Red and Green book please";
+                //textDialogue.text = "Hi, I'd like a Red and Green book please";
+                GreenRedBook.SetActive(true);
             }
             else if (chance >= 141 && chance <= 150)
             {
                 patronChild.gameObject.tag = category10;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Red and Yellow book please";
+                //textDialogue.text = "Hi, I'd like a Red and Yellow book please";
+                YellowRedBook.SetActive(true);
             }
             else if (chance >= 151 && chance <= 160)
             {
                 patronChild.gameObject.tag = category13;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Red and Blue book please";
+                //textDialogue.text = "Hi, I'd like a Red and Blue book please";
+                BlueRedBook.SetActive(true);
             }
         }
 
