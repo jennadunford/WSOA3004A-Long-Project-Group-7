@@ -110,28 +110,32 @@ public class PatRequest : MonoBehaviour
             if (chance >= 1 && chance <= 10)
             {
                 patronChild.gameObject.tag = category1;
-                textDialogue.text = "Hi, I'd like a Green book please";
+                // textDialogue.text = "Hi, I'd like a Green book please";
                 Debug.Log(patronChild.gameObject.tag);
+                greenBook.SetActive(true);
 
             }
             else if (chance >= 11 && chance <= 20)
             {
                 patronChild.gameObject.tag = category2;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Yellow book please";
+                // textDialogue.text = "Hi, I'd like a Yellow book please";
+                yellowBook.SetActive(true);
 
             }
             else if (chance >= 21 && chance <= 30)
             {
                 patronChild.gameObject.tag = category3;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Blue book please";
+                // textDialogue.text = "Hi, I'd like a Blue book please";
+                blueBook.SetActive(true);
             }
             else if (chance >= 31 && chance <= 40)
             {
                 patronChild.gameObject.tag = category4;
                 Debug.Log(patronChild.gameObject.tag);
-                textDialogue.text = "Hi, I'd like a Red book please";
+                //textDialogue.text = "Hi, I'd like a Red book please";
+                redBook.SetActive(true);
             }
             else if (chance >= 41 && chance <= 50)
             {
