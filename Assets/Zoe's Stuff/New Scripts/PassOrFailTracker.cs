@@ -73,9 +73,6 @@ public class PassOrFailTracker : MonoBehaviour
         {
             appeared = false;
         }
-
-        Debug.Log(int.Parse(clock.GetComponent<ClockController>().dailyGoal.text));
-        Debug.Log(patronScript.GetComponent<PatronScript>().patronsServed);
     }
 
     private IEnumerator Calender()
