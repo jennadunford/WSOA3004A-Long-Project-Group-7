@@ -62,7 +62,10 @@ public class PassOrFailTracker : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
+        patronsServed.text = patronScript.GetComponent<PatronScript>().patronsServed.ToString();
+
+
         if (!clock.GetComponent<ClockController>().dayTime && !appeared)
         {
             Calculations();
@@ -72,9 +75,8 @@ public class PassOrFailTracker : MonoBehaviour
         if (clock.GetComponent<ClockController>().dayTime)
         {
             appeared = false;
+
         }
-        
-        patronsServed.text = patronScript.GetComponent<PatronScript>().patronsServed.ToString();
     }
 
     private IEnumerator Calender()
@@ -89,7 +91,18 @@ public class PassOrFailTracker : MonoBehaviour
 
     private void Calculations()
     {
-        if (int.Parse(clock.GetComponent<ClockController>().dailyGoal.text) <= patronScript.GetComponent<PatronScript>().patronsServed)
+        //if (int.Parse(clock.GetComponent<ClockController>().dailyGoal.text) <= patronScript.GetComponent<PatronScript>().patronsServed)
+        //{
+        //    daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = passIMG;
+        //}
+        //else
+        //{
+        //    daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = failIMG;
+        //    daysFailed++;
+        //}
+
+
+        if (patronScript.GetComponent<PatronScript>().patronsServed >= clock.GetComponent<ClockController>().currentGoal)
         {
             daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = passIMG;
         }
@@ -98,7 +111,6 @@ public class PassOrFailTracker : MonoBehaviour
             daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = failIMG;
             daysFailed++;
         }
-
         return;
     }
 }

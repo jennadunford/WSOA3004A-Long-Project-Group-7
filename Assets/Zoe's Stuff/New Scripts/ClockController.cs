@@ -29,6 +29,7 @@ public class ClockController : MonoBehaviour
     public float modifier;
 
     public AudioSource morning;
+     public int currentGoal;
 
     public bool dayTime;
     private bool increaseDay = false;
@@ -99,7 +100,35 @@ public class ClockController : MonoBehaviour
             }
         }
 
-        Debug.Log(dayTime);
+       
+        if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 < 0)
+        {
+            currentGoal = 3;
+        }
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 0)
+        {
+            currentGoal = 5;
+        }
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 1)
+        {
+            currentGoal = 7;
+        }
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 2)
+        {
+            currentGoal = 5;
+        }
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 3)
+        {
+            currentGoal = 7;
+        }
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 4)
+        {
+            currentGoal = 9;
+        }
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 5)
+        {
+            currentGoal = 11;
+        }
     }
 
     public void NewDay()
