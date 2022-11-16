@@ -7831,7 +7831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075733, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075735, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_FlipX
@@ -7901,6 +7901,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 0}
   isGrounded: 0
   jumpForce: 0
+  animator: {fileID: 0}
 --- !u!114 &418871655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12381,6 +12382,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 0}
   isGrounded: 0
   jumpForce: 0
+  animator: {fileID: 770070169}
 --- !u!50 &770070165
 Rigidbody2D:
   serializedVersion: 4

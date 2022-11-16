@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     public float jumpForce;
 
+    public Animator animator;
 
 
 
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
         isGrounded = true;
         jumpForce = 10;
         rigidbody2d = GetComponent<Rigidbody2D>();
+
+        //animator = this.gameObject.GetComponent<Animator>();
     }
 
 
@@ -47,12 +50,19 @@ public class PlayerController : MonoBehaviour
         if (horizontal > 0 && !isFacingRight)
         {
             FlipCharcter();
+
+            animator.SetBool("IsMoving", true);
         }
         else if (horizontal < 0 && isFacingRight)
         {
             FlipCharcter();
-        }
 
+            animator.SetBool("IsMoving", true);
+        }
+         else if (horizontal == 0)
+        {
+            animator.SetBool("IsMoving", false);
+        }
     }
 
     void FlipCharcter()
