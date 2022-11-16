@@ -37490,7 +37490,7 @@ PrefabInstance:
       objectReference: {fileID: 547710585}
     - target: {fileID: 7971611773518237898, guid: 300f236094149d84db0ef4c7645fa0b3, type: 3}
       propertyPath: duration
-      value: 5
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 7971611773518237898, guid: 300f236094149d84db0ef4c7645fa0b3, type: 3}
       propertyPath: dailyGoal
