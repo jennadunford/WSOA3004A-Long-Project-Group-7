@@ -19,6 +19,9 @@ public class ClockController : MonoBehaviour
     private GameObject weekdayDisplay;
 
     [SerializeField]
+    private GameObject passFailTrack;
+
+    [SerializeField]
     private GameObject background;
 
     private float timePassed = 0;
@@ -43,6 +46,7 @@ public class ClockController : MonoBehaviour
         timePassed += Time.deltaTime;
         modifier = -timePassed * speed;
 
+
         if (modifier < -360)
         {
             timePassed = 0;
@@ -62,8 +66,6 @@ public class ClockController : MonoBehaviour
         else
         {
             dayTime = false;
-
-
         }
 
         if (!dayTime)
@@ -81,13 +83,23 @@ public class ClockController : MonoBehaviour
 
         if (modifier < -270 && !increaseDay)
         {
-            weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
+            //weekdayDisplay.GetComponent<WeekdayManager>().dayNum++;
             increaseDay = true;
             //OnDayChanged?.Invoke();
             NewDay();
             morning.Play();
  
         }
+
+        if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum == 6 && modifier < -90 && modifier > -180)
+        {
+            if (passFailTrack.GetComponent<PassOrFailTracker>().daysFailed >= 4)
+            {
+                Debug.Log("failure");
+            }
+        }
+
+        Debug.Log(dayTime);
     }
 
     public void NewDay()

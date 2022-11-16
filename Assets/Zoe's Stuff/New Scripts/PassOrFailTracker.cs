@@ -44,7 +44,9 @@ public class PassOrFailTracker : MonoBehaviour
 
     private bool appeared = true;
 
+    public bool testing;
 
+    public int daysFailed;
 
     private Image[] daysWeek = new Image[7];
 
@@ -60,23 +62,34 @@ public class PassOrFailTracker : MonoBehaviour
     }
 
     private void Update()
-    {
-        patronsServed.text = patronScript.GetComponent<PatronScript>().patronsServed.ToString();
-        
+    {        
         if (!clock.GetComponent<ClockController>().dayTime && !appeared)
         {
             Calculations();
-            StartCoroutine(Calender());
+            //StartCoroutine(Calender());
         }
 
         if (clock.GetComponent<ClockController>().dayTime)
         {
             appeared = false;
         }
+        
+        patronsServed.text = patronScript.GetComponent<PatronScript>().patronsServed.ToString();
     }
 
     private IEnumerator Calender()
     {
+        if (int.Parse(clock.GetComponent<ClockController>().dailyGoal.text) <= patronScript.GetComponent<PatronScript>().patronsServed)
+        {
+            daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = passIMG;
+        }
+        else
+        {
+            daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = failIMG;
+            daysFailed++;
+        }
+        
+        
         calenderImage.SetActive(true);
 
         yield return new WaitForSeconds(2);
@@ -94,6 +107,9 @@ public class PassOrFailTracker : MonoBehaviour
         else
         {
             daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = failIMG;
+            daysFailed++;
         }
+
+        return;
     }
 }

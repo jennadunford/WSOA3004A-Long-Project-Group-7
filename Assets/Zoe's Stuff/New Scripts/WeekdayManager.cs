@@ -10,8 +10,6 @@ public class WeekdayManager : MonoBehaviour
 
     public int dayNum = 0;
 
-
-
     public int[] dayOfWeek = new int [7];
     private string[] weekDays = new string[7];
 
