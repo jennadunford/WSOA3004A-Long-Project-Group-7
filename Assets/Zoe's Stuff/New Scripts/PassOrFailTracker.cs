@@ -66,7 +66,7 @@ public class PassOrFailTracker : MonoBehaviour
         if (!clock.GetComponent<ClockController>().dayTime && !appeared)
         {
             Calculations();
-            //StartCoroutine(Calender());
+            StartCoroutine(Calender());
         }
 
         if (clock.GetComponent<ClockController>().dayTime)
@@ -79,17 +79,6 @@ public class PassOrFailTracker : MonoBehaviour
 
     private IEnumerator Calender()
     {
-        if (int.Parse(clock.GetComponent<ClockController>().dailyGoal.text) <= patronScript.GetComponent<PatronScript>().patronsServed)
-        {
-            daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = passIMG;
-        }
-        else
-        {
-            daysWeek[dayOfWeekDis.GetComponent<WeekdayManager>().dayNum].GetComponent<Image>().sprite = failIMG;
-            daysFailed++;
-        }
-        
-        
         calenderImage.SetActive(true);
 
         yield return new WaitForSeconds(2);
