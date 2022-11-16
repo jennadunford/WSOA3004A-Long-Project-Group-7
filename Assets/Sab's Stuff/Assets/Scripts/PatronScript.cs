@@ -15,6 +15,7 @@ public class PatronScript : MonoBehaviour
     string Patron= "Patron";
     public int patronsServed=0;
 
+    bool winStateSeen =false;
 
     public int daysPassed;
     public int daysFailed;
@@ -31,7 +32,19 @@ public class PatronScript : MonoBehaviour
         if (daysFailed > 2)
         {
             //player has failed do something
+            
         }
+
+        // this prevents the winstate from showing every day
+        if(winStateSeen == false)
+        {
+            if (daysPassed<4)
+            {
+                //player has been "hired" do something.
+                winStateSeen = true;
+            }
+        }
+  
     }
 
     private void FixedUpdate()
