@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ClockController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class ClockController : MonoBehaviour
     public static event DayChange OnDayChanged;
     public float duration = 360;
 
-    public Text dailyGoal;
+    public TMP_Text dailyGoal;
 
     [SerializeField]
     private GameObject popUp;
