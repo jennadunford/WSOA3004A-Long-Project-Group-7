@@ -103,31 +103,38 @@ public class ClockController : MonoBehaviour
        
         if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 < 0)
         {
-            currentGoal = 3;
+            currentGoal = 1;
+            dailyGoal.text = "1";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 0)
         {
             currentGoal = 5;
+            dailyGoal.text = "5";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 1)
         {
             currentGoal = 7;
+            dailyGoal.text = "7";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 2)
         {
             currentGoal = 5;
+            dailyGoal.text = "5";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 3)
         {
             currentGoal = 7;
+            dailyGoal.text = "7";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 4)
         {
             currentGoal = 9;
+            dailyGoal.text = "9";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 5)
         {
             currentGoal = 11;
+            dailyGoal.text = "11";
         }
     }
 
@@ -144,19 +151,19 @@ public class ClockController : MonoBehaviour
         //This block of code will check to see if the player has completed the daily goal.
         //The number at the end of the if statement is the number of Patrons the player needs to help in order to succeed the day
 
-        if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 0 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed >= 3)
+        if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 0 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed >= 1)
         {
             Debug.Log("Success");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysPassed++;
-            dailyGoal.text = "5";
+           
         }
-        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 0 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed < 3)
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 0 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed < 1)
         {
             Debug.Log("Failure");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysFailed++;
-            dailyGoal.text = "5";
+            
         }
 
         //Teusday
@@ -165,14 +172,14 @@ public class ClockController : MonoBehaviour
             Debug.Log("Success");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysPassed++;
-            dailyGoal.text = "7";
+            
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 1 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed < 5)
         {
             Debug.Log("Failure");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysFailed++;
-            dailyGoal.text = "7";
+           
         }
       
 
@@ -182,14 +189,14 @@ public class ClockController : MonoBehaviour
             Debug.Log("Success");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysPassed++;
-            dailyGoal.text = "5";
+           
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 2 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed < 7)
         {
             Debug.Log("Failure");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysFailed++;
-            dailyGoal.text = "5";
+            
         }
       
 
@@ -199,14 +206,14 @@ public class ClockController : MonoBehaviour
             Debug.Log("Success");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysPassed++;
-            dailyGoal.text = "7";
+            
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 3 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed < 5)
         {
             Debug.Log("Failure");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysFailed++;
-            dailyGoal.text = "7";
+            
 
         }
         
@@ -217,14 +224,14 @@ public class ClockController : MonoBehaviour
             Debug.Log("Success");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysPassed++;
-            dailyGoal.text = "9";
+           
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 4 && GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed < 7)
         {
             Debug.Log("Failure");
             GameObject.Find("Main Camera").GetComponent<PatronScript>().patronsServed = 0;
             GameObject.Find("Main Camera").GetComponent<PatronScript>().daysFailed++;
-            dailyGoal.text = "9";
+            
         }
        
 
