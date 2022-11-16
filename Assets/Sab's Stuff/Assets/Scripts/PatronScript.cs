@@ -17,6 +17,9 @@ public class PatronScript : MonoBehaviour
 
     bool winStateSeen =false;
 
+    public GameObject winState;
+    public GameObject loseState;
+
     public int daysPassed;
     public int daysFailed;
     int patronType;
@@ -31,12 +34,16 @@ public class PatronScript : MonoBehaviour
     {
         if (daysFailed > 2)
         {
-            //player has failed do something
-            
+            loseState.SetActive(true);
+        }
+
+        if ((daysFailed + daysPassed) == 6)
+        {
+            winState.SetActive(true);
         }
 
         // this prevents the winstate from showing every day
-        if(winStateSeen == false)
+        if (winStateSeen == false)
         {
             if (daysPassed<4)
             {
