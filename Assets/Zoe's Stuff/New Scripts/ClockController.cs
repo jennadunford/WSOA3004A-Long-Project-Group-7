@@ -108,33 +108,33 @@ public class ClockController : MonoBehaviour
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 0)
         {
-            currentGoal = 5;
-            dailyGoal.text = "5";
+            currentGoal = 3;
+            dailyGoal.text = "3";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 1)
         {
-            currentGoal = 7;
-            dailyGoal.text = "7";
+            currentGoal = 5;
+            dailyGoal.text = "5";
         }
         else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 2)
+        {
+            currentGoal = 3;
+            dailyGoal.text = "3";
+        }
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 3)
         {
             currentGoal = 5;
             dailyGoal.text = "5";
         }
-        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 3)
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 4)
         {
             currentGoal = 7;
             dailyGoal.text = "7";
         }
-        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 4)
+        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 5)
         {
             currentGoal = 9;
             dailyGoal.text = "9";
-        }
-        else if (weekdayDisplay.GetComponent<WeekdayManager>().dayNum - 1 == 5)
-        {
-            currentGoal = 11;
-            dailyGoal.text = "11";
         }
     }
 

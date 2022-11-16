@@ -1792,7 +1792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.5343628, y: -1.4780273}
+  m_AnchoredPosition: {x: -1.5344238, y: -1.4780273}
   m_SizeDelta: {x: 1037.4062, y: 527.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140680687
@@ -2817,7 +2817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.5255737, y: -1.4780273}
+  m_AnchoredPosition: {x: -1.5256348, y: -1.4780273}
   m_SizeDelta: {x: 1037.4062, y: 527.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177960699
@@ -38337,12 +38337,12 @@ PrefabInstance:
       objectReference: {fileID: 547710585}
     - target: {fileID: 7971611773518237898, guid: 300f236094149d84db0ef4c7645fa0b3, type: 3}
       propertyPath: duration
-      value: 140
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7971611773518237898, guid: 300f236094149d84db0ef4c7645fa0b3, type: 3}
       propertyPath: dailyGoal
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 207439790}
     - target: {fileID: 7971611773518237898, guid: 300f236094149d84db0ef4c7645fa0b3, type: 3}
       propertyPath: background
       value: 
