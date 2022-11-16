@@ -37,7 +37,7 @@ public class PatronScript : MonoBehaviour
     {
 
         //This will check if there is a patron that already exists in the scene.
-        if (GameObject.FindGameObjectWithTag(Patron) == null)
+        if (GameObject.FindGameObjectWithTag("Patron") == null)
         {
             //no patron exists
            // Debug.Log("They don't exist");
@@ -56,6 +56,7 @@ public class PatronScript : MonoBehaviour
         }
         
         StopAllCoroutines();
+        //StopCoroutine(Interval());
         
     }
 
