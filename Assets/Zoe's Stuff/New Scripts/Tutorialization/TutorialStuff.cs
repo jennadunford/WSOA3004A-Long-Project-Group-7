@@ -5,13 +5,18 @@ using UnityEngine;
 public class TutorialStuff : MonoBehaviour
 {
     [SerializeField]
-    private GameObject wasdInstr;
-    [SerializeField]
-    private GameObject patronInstr;
+    private GameObject instructions;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        patronInstr.SetActive(true);
-        wasdInstr.SetActive(false);
+        StartCoroutine(TimeDelay());
+    }
+
+    IEnumerator TimeDelay()
+    {
+        yield return new WaitForSeconds(3);
+
+        instructions.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }
