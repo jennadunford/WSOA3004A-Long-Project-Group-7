@@ -1701,7 +1701,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144464127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.21, y: -0.47000003, z: -21}
+  m_LocalPosition: {x: -4.21, y: -0.45999992, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16397,7 +16397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096044254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.21, y: -0.47000003, z: -21}
+  m_LocalPosition: {x: -4.21, y: -0.45999992, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20698,7 +20698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.843, y: -0.255}
+  m_AnchoredPosition: {x: 0.84, y: -0.265}
   m_SizeDelta: {x: 0.2, y: 0.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1341866236
@@ -33543,7 +33543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075728, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.57
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075728, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33599,7 +33599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075731, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_Size.y
-      value: 1.0529191
+      value: 1.0773592
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075731, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_Offset.x
@@ -33607,7 +33607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075731, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_Offset.y
-      value: -0.02645962
+      value: -0.03867966
       objectReference: {fileID: 0}
     - target: {fileID: 8236132266548075731, guid: 678a9c6dca16e384b91e9e25fd329c99, type: 3}
       propertyPath: m_IsTrigger
