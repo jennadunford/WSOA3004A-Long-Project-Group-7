@@ -43,7 +43,7 @@ public class NarrativeElement : MonoBehaviour
 
         if (move >= 4)
         {
-            SceneManager.LoadScene("ArtTest");
+            SceneManager.LoadScene("Tutorial");
         }
     }
 
