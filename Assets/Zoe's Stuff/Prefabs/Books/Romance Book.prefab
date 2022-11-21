@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3836745775792086751}
   m_Layer: 0
   m_Name: Romance Book
-  m_TagString: Romance
+  m_TagString: Adventure Romance
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471c3bdc4c450404d9cc13fee781adf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseState: {fileID: 0}
 --- !u!114 &3836745775792086751
 MonoBehaviour:
   m_ObjectHideFlags: 0
