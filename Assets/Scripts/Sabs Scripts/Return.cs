@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class Return : MonoBehaviour
 {
- 
 
+    public GameObject loseState;
 
+    public void Start()
+    {
+        //loseState = GameObject.FindWithTag("Lose");
+    }
 
     public void ReturnMe()
     {
@@ -23,7 +27,7 @@ public class Return : MonoBehaviour
         else if (gameObject.GetComponentInParent<BookPile>().pile[1].GetComponent<RemoveFromPile>().isUsed == false)
         {
             this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[1].transform;
-            
+
             this.gameObject.transform.position = this.gameObject.transform.parent.position;
 
             this.gameObject.SetActive(false);
@@ -94,6 +98,9 @@ public class Return : MonoBehaviour
             this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[12].transform;
             this.gameObject.transform.position = this.gameObject.transform.parent.position;
             this.gameObject.SetActive(false);
+            //Debug.Log("Last Slot Filled");
+            //loseState.SetActive(true);
+
         }
         else if (gameObject.GetComponentInParent<BookPile>().pile[13].GetComponent<RemoveFromPile>().isUsed == false)
         {
@@ -124,79 +131,81 @@ public class Return : MonoBehaviour
             this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[17].transform;
             this.gameObject.transform.position = this.gameObject.transform.parent.position;
             this.gameObject.SetActive(false);
+            Debug.Log("Last Slot Filled");
+            loseState.SetActive(true);
         }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[18].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[18].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[19].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[19].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[20].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[20].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[21].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[21].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[22].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[22].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[23].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[23].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[24].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[24].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[25].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[25].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[26].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[26].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[27].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[27].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[28].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[28].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
-        else if (gameObject.GetComponentInParent<BookPile>().pile[29].GetComponent<RemoveFromPile>().isUsed == false)
-        {
-            this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[29].transform;
-            this.gameObject.transform.position = this.gameObject.transform.parent.position;
-            this.gameObject.SetActive(false);
-        }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[18].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[18].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[19].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[19].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[20].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[20].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[21].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[21].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[22].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[22].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[23].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[23].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[24].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[24].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[25].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[25].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[26].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[26].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[27].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[27].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[28].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[28].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
+        //    else if (gameObject.GetComponentInParent<BookPile>().pile[29].GetComponent<RemoveFromPile>().isUsed == false)
+        //    {
+        //        this.gameObject.transform.parent = gameObject.GetComponentInParent<BookPile>().pile[29].transform;
+        //        this.gameObject.transform.position = this.gameObject.transform.parent.position;
+        //        this.gameObject.SetActive(false);
+        //    }
 
 
 

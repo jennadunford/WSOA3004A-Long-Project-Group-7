@@ -22,6 +22,8 @@ TagManager:
   - Horror Fantasy
   - Horror Romance
   - Fantasy Romance
+  - Horror Adventure
+  - Lose
   layers:
   - Default
   - TransparentFX

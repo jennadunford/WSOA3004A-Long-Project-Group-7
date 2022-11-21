@@ -26,7 +26,7 @@ public class PatronScript : MonoBehaviour
 
     private void Awake()
     {
-      
+        
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class PatronScript : MonoBehaviour
             loseState.SetActive(true);
         }
 
-        if ((daysFailed + daysPassed) == 6)
+        if ((daysFailed + daysPassed) == 7)
         {
             winState.SetActive(true);
         }
