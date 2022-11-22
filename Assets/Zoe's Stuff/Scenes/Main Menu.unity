@@ -396,6 +396,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1606251686}
     m_Modifications:
+    - target: {fileID: 132845065192763548, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
+      propertyPath: m_text
+      value: 'KongText Font by codeman38
+
+        Available at:'
+      objectReference: {fileID: 0}
     - target: {fileID: 195524270376626870, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_SizeDelta.x
       value: 883.11
@@ -431,6 +437,18 @@ PrefabInstance:
     - target: {fileID: 2446171312254977810, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_Name
       value: Menu Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929208240608117606, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
+      propertyPath: m_text
+      value: '16x16 DungeonTileset II by 0x72
+
+        Available at:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868304594034575413, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
+      propertyPath: m_text
+      value: '2D Pixel Art -Deep Caves 16x16 by Lifty
+
+        Available at:'
       objectReference: {fileID: 0}
     - target: {fileID: 6282060751144600747, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_SizeDelta.x
@@ -482,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6340681093036768465, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6340681093129619811, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_AnchorMax.x
@@ -552,6 +570,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6340681093413732207, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6340681093500083016, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_SizeDelta.x
       value: 943.8293
@@ -567,6 +589,10 @@ PrefabInstance:
     - target: {fileID: 6340681093500083016, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 158.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340681093856547670, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6340681093953160415, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -619,6 +645,10 @@ PrefabInstance:
     - target: {fileID: 6340681094589772362, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340681094668413723, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6340681094764968463, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -707,6 +737,12 @@ PrefabInstance:
     - target: {fileID: 6370860054335970582, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454957965518788884, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
+      propertyPath: m_text
+      value: 'Witches Pack by 9EO
+
+        Available at:'
       objectReference: {fileID: 0}
     - target: {fileID: 7904834863875459557, guid: 916fce17d8ce58946a20f55fff1f9348, type: 3}
       propertyPath: m_SizeDelta.x
