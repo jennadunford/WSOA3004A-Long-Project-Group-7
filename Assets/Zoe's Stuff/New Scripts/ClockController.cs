@@ -43,6 +43,8 @@ public class ClockController : MonoBehaviour
 
     private void Update()
     {
+
+        morning.volume = 0.15f;
         speed = 360 / duration;
         timePassed += Time.deltaTime;
         modifier = -timePassed * speed;
