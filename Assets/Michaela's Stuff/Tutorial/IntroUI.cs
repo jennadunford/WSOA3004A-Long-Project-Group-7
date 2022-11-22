@@ -10,6 +10,8 @@ public class IntroUI : MonoBehaviour
     private GameObject text2;
     [SerializeField]
     private GameObject text3;
+    [SerializeField]
+    private GameObject tutorialtext;
 
     [SerializeField]
     private GameObject glowClock;
@@ -26,9 +28,14 @@ public class IntroUI : MonoBehaviour
     
     private IEnumerator Tutorial()
     {
+        tutorialtext.SetActive(true);
+        yield return new WaitForSeconds(3);
+
+        tutorialtext.SetActive(false);
+
         text1.SetActive(true);
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
 
         text1.SetActive(false);
         text2.SetActive(true);
